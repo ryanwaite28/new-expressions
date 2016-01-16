@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>NE Photography</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/jpg" href="l1.jpg">
+		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
+		<script src="jquery.slides.min.js"></script>
+		<script>
+			$(function(){
+				$("#slides").slidesjs({
+					width: 1200,
+					height: 650,
+					start: 1,
+					navigation: {
+						active: true,
+						effect: "slide"
+					},
+					play: {
+						active: true,
+						effect: "slide",
+						interval: 3000,
+						auto: true,
+						swap: true,
+						pauseOnHover: false,
+						restartDelay: 2500
+					}
+				});
+			});
+			var map;
+
+			function initMap() {
+				// Create a map object and specify the DOM element for display.
+				map = new google.maps.Map(document.getElementById('map-div'), {
+					center: {lat: 34.052224, lng: -118.243388},
+					scrollwheel: true,
+					zoom: 11
+				});
+  
+				var marker = new google.maps.Marker({
+					map: map,
+					position: {lat: 34.052224, lng: -118.243388},
+					animation: google.maps.Animation.DROP,
+				});
+  
+				var infowindow = new google.maps.InfoWindow();
+  
+			}
+		</script>
+		<!--<script src="script.js"></script>-->
+	</head>
+	
+	<body>
+
+		<div class="nav-div">
+			<nav class="navigate">
+			
+				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
+				
+				<br>
+				
+				<ul class="links-list">
+					<li><h4>Top</h4>
+						<ul id="top-list" class="">
+							<li><a href="top-shirts.html">Shirts</a></li>
+							<li><a href="top-sleeveless.html">Sleevless</a></li>
+							<li><a href="top-sweaters.html">Sweaters</a></li>
+							<li><a href="top-tshirts.html">T-Shirts</a></li>
+							<li><a href="top-dresses.html">Dresses</a></li>
+							<li><a href="top-hoodies.html">Hoodies</a></li>
+							<li><a href="top-jackets.html">Jackets</a></li>
+						</ul>
+					</li>
+					<li><h4>Bottom</h4>
+						<ul id="bottom-list" class="">
+							<li><a href="bottom-pants.html">Pants</a></li>
+							<li><a href="bottom-shorts.html">Shorts</a></li>
+							<li><a href="bottom-joggers.html">Joggers</a></li>
+							<li><a href="bottom-cargos.html">Cargos</a></li>
+							<li><a href="bottom-skirts.html">Skirts</a></li>
+							<li><a href="bottom-rompers.html">Rompers</a></li>
+							<li><a href="bottom-leggings.html">Leggings</a></li>
+						</ul>
+					</li>
+					<li><h4>Footwear</h4>
+						<ul id="shoes-list" class="">
+							<li><a href="footwear-sneakers.html">Sneakers</a></li>
+							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-slippers.html">Slippers</a></li>
+							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
+							<li><a href="footwear-boots.html">Boots</a></li>
+						</ul>
+					</li>
+					<li><h4>Accessories</h4>
+						<ul id="asc-list" class="">
+							<li><a href="asc-hats.html">Hats</a></li>
+							<li><a href="asc-bracelets.html">Bracelets</a></li>
+							<li><a href="asc-necklaces.html">Necklaces</a></li>
+							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-backpacks.html">Back Pack</a></li>
+							<li><a href="asc-glasses.html">Glasses</a></li>
+							<li><a href="asc-scarfs.html">Scarfs</a></li>
+						</ul>
+					</li>
+					<li><h4><a class="type-one" href="ne-new.html">New</a></h4></li>
+					<li><h4><a class="type-one" href="ne-sale.html">Sale</a></h4></li>
+					<li><h4>Other</h4>
+						<ul id="oth-list" class="">
+							<li><a href="ne-music.html">Music</a></li>
+							<li><a href="ne-video.html">Video</a></li>
+							<li><a href="ne-picture.html">Picture</a></li>
+						</ul>
+					</li>
+					<li><h4>Submissions</h4>
+						<ul id="sbm-list" class="">
+							<li><a href="ne-outfitters.html">Outfitters</a></li>
+							<li><a href="ne-photography.html">Photography</a></li>
+						</ul>
+					</li>
+					<li><h4>Info</h4>
+						<ul id="l-list" class="">
+							<li><a href="ne-aboutme.html">About Me</a></li>
+							<li><a href="ne-contactme.html">Contacts Me</a></li>
+							<li><a href="ne-map.html">Location</a></li>
+							<li><a href="ne-submit.html">Submit</a></li>
+							<li><a href="ne-faq.html">FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<br>
+				
+				<ul class="social-list">
+				
+					<li><a href=""><img class="icon" src="img/tumblr.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/instagram.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/twitter.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/facebook.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/youtube.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/rss.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/google-plus.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/email.png"/></a></li>
+					<li><a href="ne-map.html"><img class="icon" src="img/marker.png"/></a></li>
+				
+				</ul>
+				
+			</nav>
+		</div>
+		
+		<div class="main-contain">
+		
+			<div class="container-fluid">
+		
+				<div class="ne-row row">
+					<div class="col-md-12">
+						<h1 class="text-center title-text font-one">New Expressions</h1>
+						<h3 class="text-center">Photography</h3>
+					</div>
+				</div>
+
+				<div class="row">
+					
+					<br><br><br>
+				
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/cafb3ce0cbb960fd2a1a9a140451a4ec/tumblr_o10bb9XG4M1v5q5ejo1_500.jpg"/>
+						<p class="text-center"> </p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/63b6272229f85dfe9f86ab334b21bfa9/tumblr_n4cght5xM11sli5ozo1_500.jpg"/>
+						<p class="text-center"></p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/907246d77175624b4533cb4cf5ca665e/tumblr_nzk9dgdJV61rj38h4o1_500.jpg"/>
+						<p class="text-center"></p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src=""/>
+						<p class="text-center"></p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src=""/>
+						<p class="text-center"></p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src=""/>
+						<p class="text-center"></p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src=""/>
+						<p class="text-center"></p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src=""/>
+						<p class="text-center"></p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src=""/>
+						<p class="text-center"></p>
+					
+					</div>
+				
+				</div>
+				
+			</div>
+			
+		</div>
+
+	</body>
+	
+</html>

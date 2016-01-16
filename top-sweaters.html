@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>NE Sweaters</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/jpg" href="l1.jpg">
+		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
+		<script src="jquery.slides.min.js"></script>
+		<script>
+			$(function(){
+				$("#slides").slidesjs({
+					width: 1200,
+					height: 650,
+					start: 1,
+					navigation: {
+						active: true,
+						effect: "slide"
+					},
+					play: {
+						active: true,
+						effect: "slide",
+						interval: 3000,
+						auto: true,
+						swap: true,
+						pauseOnHover: false,
+						restartDelay: 2500
+					}
+				});
+			});
+			var map;
+
+			function initMap() {
+				// Create a map object and specify the DOM element for display.
+				map = new google.maps.Map(document.getElementById('map-div'), {
+					center: {lat: 34.052224, lng: -118.243388},
+					scrollwheel: true,
+					zoom: 11
+				});
+  
+				var marker = new google.maps.Marker({
+					map: map,
+					position: {lat: 34.052224, lng: -118.243388},
+					animation: google.maps.Animation.DROP,
+				});
+  
+				var infowindow = new google.maps.InfoWindow();
+  
+			}
+		</script>
+		<!--<script src="script.js"></script>-->
+	</head>
+	
+	<body>
+
+		<div class="nav-div">
+			<nav class="navigate">
+			
+				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
+				
+				<br>
+				
+				<ul class="links-list">
+					<li><h4>Top</h4>
+						<ul id="top-list" class="">
+							<li><a href="top-shirts.html">Shirts</a></li>
+							<li><a href="top-sleeveless.html">Sleevless</a></li>
+							<li><a href="top-sweaters.html">Sweaters</a></li>
+							<li><a href="top-tshirts.html">T-Shirts</a></li>
+							<li><a href="top-dresses.html">Dresses</a></li>
+							<li><a href="top-hoodies.html">Hoodies</a></li>
+							<li><a href="top-jackets.html">Jackets</a></li>
+						</ul>
+					</li>
+					<li><h4>Bottom</h4>
+						<ul id="bottom-list" class="">
+							<li><a href="bottom-pants.html">Pants</a></li>
+							<li><a href="bottom-shorts.html">Shorts</a></li>
+							<li><a href="bottom-joggers.html">Joggers</a></li>
+							<li><a href="bottom-cargos.html">Cargos</a></li>
+							<li><a href="bottom-skirts.html">Skirts</a></li>
+							<li><a href="bottom-rompers.html">Rompers</a></li>
+							<li><a href="bottom-leggings.html">Leggings</a></li>
+						</ul>
+					</li>
+					<li><h4>Footwear</h4>
+						<ul id="shoes-list" class="">
+							<li><a href="footwear-sneakers.html">Sneakers</a></li>
+							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-slippers.html">Slippers</a></li>
+							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
+							<li><a href="footwear-boots.html">Boots</a></li>
+						</ul>
+					</li>
+					<li><h4>Accessories</h4>
+						<ul id="asc-list" class="">
+							<li><a href="asc-hats.html">Hats</a></li>
+							<li><a href="asc-bracelets.html">Bracelets</a></li>
+							<li><a href="asc-necklaces.html">Necklaces</a></li>
+							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-backpacks.html">Back Pack</a></li>
+							<li><a href="asc-glasses.html">Glasses</a></li>
+							<li><a href="asc-scarfs.html">Scarfs</a></li>
+						</ul>
+					</li>
+					<li><h4><a class="type-one" href="ne-new.html">New</a></h4></li>
+					<li><h4><a class="type-one" href="ne-sale.html">Sale</a></h4></li>
+					<li><h4>Other</h4>
+						<ul id="oth-list" class="">
+							<li><a href="ne-music.html">Music</a></li>
+							<li><a href="ne-video.html">Video</a></li>
+							<li><a href="ne-picture.html">Picture</a></li>
+						</ul>
+					</li>
+					<li><h4>Submissions</h4>
+						<ul id="sbm-list" class="">
+							<li><a href="ne-outfitters.html">Outfitters</a></li>
+							<li><a href="ne-photography.html">Photography</a></li>
+						</ul>
+					</li>
+					<li><h4>Info</h4>
+						<ul id="l-list" class="">
+							<li><a href="ne-aboutme.html">About Me</a></li>
+							<li><a href="ne-contactme.html">Contacts Me</a></li>
+							<li><a href="ne-map.html">Location</a></li>
+							<li><a href="ne-submit.html">Submit</a></li>
+							<li><a href="ne-faq.html">FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<br>
+				
+				<ul class="social-list">
+				
+					<li><a href=""><img class="icon" src="img/tumblr.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/instagram.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/twitter.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/facebook.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/youtube.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/rss.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/google-plus.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/email.png"/></a></li>
+					<li><a href="ne-map.html"><img class="icon" src="img/marker.png"/></a></li>
+				
+				</ul>
+				
+			</nav>
+		</div>
+		
+		<div class="main-contain">
+		
+			<div class="container-fluid">
+		
+				<div class="ne-row row">
+					<div class="col-md-12">
+						<h1 class="text-center title-text font-one">New Expressions</h1>
+						<h3 class="text-center">Sweaters</h3>
+					</div>
+				</div>
+				
+				<div class="row">
+					
+					<h2 class="text-center" style="padding-left: 20px">Men</h2>
+					
+					<br><br><br>
+				
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Half & Half Sweater</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/51d49e57758a93df3c0eecddf257834a/tumblr_o0tvyvORGM1r66csno1_500.jpg"/>
+						<p class="text-center">$33.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Soft Patterned Sweater</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/de6c3ca0e552c2e455db59599f0e8e0e/tumblr_n1w5eoCD7s1s3yrj2o1_500.jpg"/>
+						<p class="text-center">$31.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Harry Potter Sweater</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/971849032e9b96fe2d4da67ab2fb4ec5/tumblr_njwcra98g91unmt50o1_500.jpg"/>
+						<p class="text-center">$34.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>White Cool Pattern Sweater</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/2ae657d96c0c17b4db30be1c06ef1bbf/tumblr_o0ls53XmJo1qjy5heo1_500.jpg"/>
+						<p class="text-center">$30.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Fluffy Over-Size Sweater</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/39f3c45d7849ed922c6fad2c39382621/tumblr_o0tw0fZOwI1r66csno1_500.jpg"/>
+						<p class="text-center">$35.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black & Green Nebula Sweater</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/1e3bc1ad4ab1916a9469ccaa2b63468a/tumblr_mvueku2SHa1s2wxsko1_500.jpg"/>
+						<p class="text-center">$38.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>White Elegant Sweater</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/b6dcdb53fdefc401ad57dd03763a1cdc/tumblr_nzjud64LfD1s5jtbeo1_500.jpg"/>
+						<p class="text-center">$36.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Fire Damage Sweater</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/0ace988b01fac26ad5c530140a1a7056/tumblr_o070cxkN8W1qajhjjo1_500.jpg"/>
+						<p class="text-center">$34.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Skeleton Sweater</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/09f26d573581248f200ce84135cd9cff/tumblr_o0rjd6Qlvl1qajhjjo1_500.jpg"/>
+						<p class="text-center">$30.00</p>
+					
+					</div>
+					
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					
+					<h2 class="text-center" style="padding-left: 20px">Women</h2>
+					
+					<br><br><br>
+				
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Mickie Mouse Sweater</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/b406b7f7c7bc9182102b4763fe7b54bd/tumblr_mt3ccv1kTJ1snyvn0o1_500.jpg"/>
+						<p class="text-center">$30.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Disrespect Sweater</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/cd23220885388a04421f5801a94a5831/tumblr_o0ck49BSqB1qc0sixo1_500.jpg"/>
+						<p class="text-center">$32.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Holy Cross Sweater</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/d276405a76a243bb29cbff3837ce8123/tumblr_mtgzi3NIjl1ss0knjo1_500.jpg"/>
+						<p class="text-center">$29.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Green Gradient Cardigan</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/46885ec842b33f686421d486cfebca54/tumblr_mtx0xtlsRm1ss0knjo1_500.jpg"/>
+						<p class="text-center">$30.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>White Plain Sweater</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/23363646457b2b97fe5530f809f60b93/tumblr_o0x1x2U2wy1qiujq2o1_500.jpg"/>
+						<p class="text-center">$31.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Blue Tiger Sweater</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/367a3f5609c21d0bb32332b8125d6f52/tumblr_mwlgueNtgU1ss0knjo1_500.png"/>
+						<p class="text-center">$33.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Brown Fancy Sweater</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/c989453504dfbf019e8c9b9e7f415e79/tumblr_o0rwh3X9nP1sv5umto1_500.jpg"/>
+						<p class="text-center">$37.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Sunflower Sweater</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/5c6182321f4631bac5487023728ea597/tumblr_mro1ntXzAW1ss0knjo1_500.jpg"/>
+						<p class="text-center">$29.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black - White Tiger Head Sweater</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/74b6fe806463915e7241ea5276f3eab6/tumblr_ms677bRWNG1ss0knjo1_500.jpg"/>
+						<p class="text-center">$35.00</p>
+					
+					</div>
+				
+				</div>
+			
+		</div>
+
+	</body>
+	
+</html>

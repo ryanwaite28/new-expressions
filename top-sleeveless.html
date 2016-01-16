@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>NE Sleeveless</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/jpg" href="l1.jpg">
+		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
+		<script src="jquery.slides.min.js"></script>
+		<script>
+			$(function(){
+				$("#slides").slidesjs({
+					width: 1200,
+					height: 650,
+					start: 1,
+					navigation: {
+						active: true,
+						effect: "slide"
+					},
+					play: {
+						active: true,
+						effect: "slide",
+						interval: 3000,
+						auto: true,
+						swap: true,
+						pauseOnHover: false,
+						restartDelay: 2500
+					}
+				});
+			});
+			var map;
+
+			function initMap() {
+				// Create a map object and specify the DOM element for display.
+				map = new google.maps.Map(document.getElementById('map-div'), {
+					center: {lat: 34.052224, lng: -118.243388},
+					scrollwheel: true,
+					zoom: 11
+				});
+  
+				var marker = new google.maps.Marker({
+					map: map,
+					position: {lat: 34.052224, lng: -118.243388},
+					animation: google.maps.Animation.DROP,
+				});
+  
+				var infowindow = new google.maps.InfoWindow();
+  
+			}
+		</script>
+		<!--<script src="script.js"></script>-->
+	</head>
+	
+	<body>
+
+		<div class="nav-div">
+			<nav class="navigate">
+			
+				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
+				
+				<br>
+				
+				<ul class="links-list">
+					<li><h4>Top</h4>
+						<ul id="top-list" class="">
+							<li><a href="top-shirts.html">Shirts</a></li>
+							<li><a href="top-sleeveless.html">Sleevless</a></li>
+							<li><a href="top-sweaters.html">Sweaters</a></li>
+							<li><a href="top-tshirts.html">T-Shirts</a></li>
+							<li><a href="top-dresses.html">Dresses</a></li>
+							<li><a href="top-hoodies.html">Hoodies</a></li>
+							<li><a href="top-jackets.html">Jackets</a></li>
+						</ul>
+					</li>
+					<li><h4>Bottom</h4>
+						<ul id="bottom-list" class="">
+							<li><a href="bottom-pants.html">Pants</a></li>
+							<li><a href="bottom-shorts.html">Shorts</a></li>
+							<li><a href="bottom-joggers.html">Joggers</a></li>
+							<li><a href="bottom-cargos.html">Cargos</a></li>
+							<li><a href="bottom-skirts.html">Skirts</a></li>
+							<li><a href="bottom-rompers.html">Rompers</a></li>
+							<li><a href="bottom-leggings.html">Leggings</a></li>
+						</ul>
+					</li>
+					<li><h4>Footwear</h4>
+						<ul id="shoes-list" class="">
+							<li><a href="footwear-sneakers.html">Sneakers</a></li>
+							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-slippers.html">Slippers</a></li>
+							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
+							<li><a href="footwear-boots.html">Boots</a></li>
+						</ul>
+					</li>
+					<li><h4>Accessories</h4>
+						<ul id="asc-list" class="">
+							<li><a href="asc-hats.html">Hats</a></li>
+							<li><a href="asc-bracelets.html">Bracelets</a></li>
+							<li><a href="asc-necklaces.html">Necklaces</a></li>
+							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-backpacks.html">Back Pack</a></li>
+							<li><a href="asc-glasses.html">Glasses</a></li>
+							<li><a href="asc-scarfs.html">Scarfs</a></li>
+						</ul>
+					</li>
+					<li><h4><a class="type-one" href="ne-new.html">New</a></h4></li>
+					<li><h4><a class="type-one" href="ne-sale.html">Sale</a></h4></li>
+					<li><h4>Other</h4>
+						<ul id="oth-list" class="">
+							<li><a href="ne-music.html">Music</a></li>
+							<li><a href="ne-video.html">Video</a></li>
+							<li><a href="ne-picture.html">Picture</a></li>
+						</ul>
+					</li>
+					<li><h4>Submissions</h4>
+						<ul id="sbm-list" class="">
+							<li><a href="ne-outfitters.html">Outfitters</a></li>
+							<li><a href="ne-photography.html">Photography</a></li>
+						</ul>
+					</li>
+					<li><h4>Info</h4>
+						<ul id="l-list" class="">
+							<li><a href="ne-aboutme.html">About Me</a></li>
+							<li><a href="ne-contactme.html">Contacts Me</a></li>
+							<li><a href="ne-map.html">Location</a></li>
+							<li><a href="ne-submit.html">Submit</a></li>
+							<li><a href="ne-faq.html">FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<br>
+				
+				<ul class="social-list">
+				
+					<li><a href=""><img class="icon" src="img/tumblr.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/instagram.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/twitter.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/facebook.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/youtube.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/rss.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/google-plus.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/email.png"/></a></li>
+					<li><a href="ne-map.html"><img class="icon" src="img/marker.png"/></a></li>
+				
+				</ul>
+				
+			</nav>
+		</div>
+		
+		<div class="main-contain">
+		
+			<div class="container-fluid">
+		
+				<div class="ne-row row">
+					<div class="col-md-12">
+						<h1 class="text-center title-text font-one">New Expressions</h1>
+						<h3 class="text-center">Sleeveless</h3>
+					</div>
+				</div>
+				
+				<div class="row">
+					
+					<h2 class="text-center" style="padding-left: 20px">Men</h2>
+					
+					<br><br><br>
+				
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Bulls Sleveless</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/73798ede45cbbbcd2c5b706107b1350b/tumblr_n1g171LxL71sk15b1o1_500.jpg"/>
+						<p class="text-center">$20.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Too Cool For School</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/e52d099b3357339a018aad1114238f8b/tumblr_o10ve1kzUY1ucz5klo1_500.jpg"/>
+						<p class="text-center">$19.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>OBEY Tank Top</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/d2d881d2c198bca538d811fccb045c54/tumblr_o125g8JH7u1tms1nzo1_500.jpg"/>
+						<p class="text-center">$26.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Tie Dye Tank Top</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/ac5d547caea93551107fe351ac6f450d/tumblr_o0q1cse1rj1u7zo6ko1_500.jpg"/>
+						<p class="text-center">$20.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>White Plaid Sleeveless</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/a3c0342dda37e57af1c496a7c5bcf059/tumblr_o0z1100ycz1t65k95o1_500.jpg"/>
+						<p class="text-center">$22.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>No Trust Tank Top</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/ebae8036f52ae477353f14b8dc0a004a/tumblr_o0yjbnOjcC1tjhhauo1_500.jpg"/>
+						<p class="text-center">$18.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Taz Tank Top</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/4e2dd35304a261f78a303b2c84fb4525/tumblr_o11koqThsr1sixxb7o1_500.jpg"/>
+						<p class="text-center">$19.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Wolf Moon Sleeveless</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/fa1550301de8d990d2f62a319175cf44/tumblr_o0q5ze7bEm1u3o7quo1_500.jpg"/>
+						<p class="text-center">$25.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Ice Cold Sleeveless</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/d0796fde6d1c8796bc6aa61f14f5b3a4/tumblr_o0ymotJtZc1tkh4dwo1_500.jpg"/>
+						<p class="text-center">$15.00</p>
+					
+					</div>
+				
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					
+					<h2 class="text-center" style="padding-left: 20px">Women</h2>
+					
+					<br><br><br>
+				
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Food Before Dudes Sleeveless</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/3d95ea8329e07690776182c3b9cd8462/tumblr_o0vk7gzaJI1ucz5klo1_500.jpg"/>
+						<p class="text-center">$20.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Heartless Sleeveless</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/bfe8a361d7f0d380077768d5b6bcdb6b/tumblr_o0r4pnn3nf1uq93wxo1_500.jpg"/>
+						<p class="text-center">$22.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Pizza First Sleeveless</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/59c7351452717025b40c5b2f25f2541b/tumblr_o0ohctpSpt1u3o7quo1_500.jpg"/>
+						<p class="text-center">$16.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Green Anchor Sleeveless</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/1e2ebb0b64a35850466b74dc501c43fd/tumblr_o10oswJGo31ueg8i4o1_500.jpg"/>
+						<p class="text-center">$17.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black - DreamCatcher Sleeveless</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/7ce2d079bcf1884cc076dab2522489c8/tumblr_o0rj2rk5yd1u7g4jmo1_500.jpg"/>
+						<p class="text-center">$23.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Grey Cottom Crop Top</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/4b9cab39ff093ee07b64fe23501eed92/tumblr_o0nk5w3VaH1v1bn7vo1_500.jpg"/>
+						<p class="text-center">$14.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Blue Alchemy Tank Top</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/3acb65367f663dddb18990fe795159d0/tumblr_o11jlh4PJx1rba69qo1_500.jpg"/>
+						<p class="text-center">$18.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Good Vibes Crop Top</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/5feca324fe67216070f3ca33b3fd0f90/tumblr_o10wfrIxxR1v2c87xo1_500.jpg"/>
+						<p class="text-center">$22.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Wolf Moon Sleeveless</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/501528aa21a23472de8077671507d838/tumblr_o10bz13I3Q1usfjiuo1_500.jpg"/>
+						<p class="text-center">$21.00</p>
+					
+					</div>
+				
+				</div>
+			
+		</div>
+
+	</body>
+	
+</html>

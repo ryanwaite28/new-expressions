@@ -1,0 +1,195 @@
+/*    Home Page    */
+
+div {
+	display: block;
+}
+
+hr {
+	border-color: black;
+}
+
+.font-one {
+	font-family: 'Kaushan Script', cursive;
+}
+
+.ne-row {
+	background-color: #f4f4f4;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+.title-text {
+	font-size: 5em;
+}
+
+#slides {
+	width: 75%;
+	margin: auto;
+}
+
+#slides a {
+	padding: 10px;
+	display: inline;
+}
+
+#slides ul {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+	float: right;
+}
+
+#slides ul li {
+	display: inline-block;
+}
+
+#slides img {
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+.nav-div {
+	width: 175px;
+	height: 100vh;
+	background-color: #e6e6e6;
+	overflow-y: scroll;
+	display: inline-block;
+	float: left;
+	border-right: 1px solid black;
+}
+
+.main-contain {
+	height: 100vh;
+	overflow-y: scroll;
+	float: left;
+	width: calc(100% - 175px);
+}
+.nav-div::-webkit-scrollbar{ 
+    display: none; 
+}
+
+.links-list li {
+	border-top: 1px solid black;
+	opacity: 0.7;
+	-webkit-transition: transition 0.3s;
+	transition: 0.3s;
+}
+.links-list li:last-child {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.links-list li:hover {
+	opacity: 0.8;
+	background-color: #a6a6a6;
+	transition: 0.3s;
+}
+
+.links-list li ul {
+	display: none;
+	-webkit-transition: transition 0.3s;
+	transition: 0.3s ease;
+	animation-delay: 0.3s;
+}
+.links-list li:hover ul {
+	-webkit-transition: transition 0.3s;
+	transition: 0.3s ease;
+	display: block;
+	animation-delay: 0.3s;
+}
+.links-list li ul li, .links-list li ul li:last-child {
+	border: none;
+}
+.links-list li ul li:hover {
+	opacity: 0.9;
+	background-color: #737373;
+	transition: 0.3s;
+}
+.links-list li ul li a {
+	color: black;
+	-webkit-transition: transition 0.3s;
+	transition: 0.3s;
+}
+.links-list li ul li a:hover {
+	color: white;
+	transition: 0.3s;
+}
+.links-list, .social-list {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	-webkit-transition: transition 0.3s;
+	transition: 0.3s;
+	animation-delay: 0.3s;
+}
+
+.links-list li{
+	display: block;
+	padding: 3px;
+}
+
+.social-list li {
+	display: inline-block;
+	padding: 10px;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+	opacity: 0.7;
+	-webkit-transition: transition 0.3s;
+	transition: 0.3s;
+}
+
+.type-one {
+	color: black;
+	opacity: 0.7;
+	-webkit-transition: transition 0.3s;
+	transition: 0.3s;
+}
+.type-one:hover {
+	color: red;
+}
+
+.icon:hover {
+	opacity: 1.0;
+	transition: 0.3s;
+}
+
+#top-list, #bottom-list, #shoes-list, 
+#asc-list, #oth-list, #l-list, #sbm-list {
+	margin: 10px 0px 10px 0px;
+	padding: 0px;
+	-webkit-transition: transition 0.3s;
+	transition: 0.3s;
+}
+
+#map-div {
+	width: 85%;
+	margin: auto;
+	height: 75vh;
+}
+
+.new-img {
+	width: 90%;
+	display: block;
+	margin: auto;
+}
+
+.present-img {
+	display: block;
+	margin: auto;
+	padding: 10px;
+	width: 100%;
+	max-width: 575px;
+	height: 60vh;
+	-webkit-transition: transition 0.3s;
+	transition: 0.3s;
+}
+
+.present-img:hover {
+	opacity: 0.7;
+	transition: 0.3s;
+}

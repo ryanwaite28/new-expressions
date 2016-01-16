@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>NE Jackets</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/jpg" href="l1.jpg">
+		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
+		<script src="jquery.slides.min.js"></script>
+		<script>
+			$(function(){
+				$("#slides").slidesjs({
+					width: 1200,
+					height: 650,
+					start: 1,
+					navigation: {
+						active: true,
+						effect: "slide"
+					},
+					play: {
+						active: true,
+						effect: "slide",
+						interval: 3000,
+						auto: true,
+						swap: true,
+						pauseOnHover: false,
+						restartDelay: 2500
+					}
+				});
+			});
+			var map;
+
+			function initMap() {
+				// Create a map object and specify the DOM element for display.
+				map = new google.maps.Map(document.getElementById('map-div'), {
+					center: {lat: 34.052224, lng: -118.243388},
+					scrollwheel: true,
+					zoom: 11
+				});
+  
+				var marker = new google.maps.Marker({
+					map: map,
+					position: {lat: 34.052224, lng: -118.243388},
+					animation: google.maps.Animation.DROP,
+				});
+  
+				var infowindow = new google.maps.InfoWindow();
+  
+			}
+		</script>
+		<!--<script src="script.js"></script>-->
+	</head>
+	
+	<body>
+
+		<div class="nav-div">
+			<nav class="navigate">
+			
+				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
+				
+				<br>
+				
+				<ul class="links-list">
+					<li><h4>Top</h4>
+						<ul id="top-list" class="">
+							<li><a href="top-shirts.html">Shirts</a></li>
+							<li><a href="top-sleeveless.html">Sleevless</a></li>
+							<li><a href="top-sweaters.html">Sweaters</a></li>
+							<li><a href="top-tshirts.html">T-Shirts</a></li>
+							<li><a href="top-dresses.html">Dresses</a></li>
+							<li><a href="top-hoodies.html">Hoodies</a></li>
+							<li><a href="top-jackets.html">Jackets</a></li>
+						</ul>
+					</li>
+					<li><h4>Bottom</h4>
+						<ul id="bottom-list" class="">
+							<li><a href="bottom-pants.html">Pants</a></li>
+							<li><a href="bottom-shorts.html">Shorts</a></li>
+							<li><a href="bottom-joggers.html">Joggers</a></li>
+							<li><a href="bottom-cargos.html">Cargos</a></li>
+							<li><a href="bottom-skirts.html">Skirts</a></li>
+							<li><a href="bottom-rompers.html">Rompers</a></li>
+							<li><a href="bottom-leggings.html">Leggings</a></li>
+						</ul>
+					</li>
+					<li><h4>Footwear</h4>
+						<ul id="shoes-list" class="">
+							<li><a href="footwear-sneakers.html">Sneakers</a></li>
+							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-slippers.html">Slippers</a></li>
+							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
+							<li><a href="footwear-boots.html">Boots</a></li>
+						</ul>
+					</li>
+					<li><h4>Accessories</h4>
+						<ul id="asc-list" class="">
+							<li><a href="asc-hats.html">Hats</a></li>
+							<li><a href="asc-bracelets.html">Bracelets</a></li>
+							<li><a href="asc-necklaces.html">Necklaces</a></li>
+							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-backpacks.html">Back Pack</a></li>
+							<li><a href="asc-glasses.html">Glasses</a></li>
+							<li><a href="asc-scarfs.html">Scarfs</a></li>
+						</ul>
+					</li>
+					<li><h4><a class="type-one" href="ne-new.html">New</a></h4></li>
+					<li><h4><a class="type-one" href="ne-sale.html">Sale</a></h4></li>
+					<li><h4>Other</h4>
+						<ul id="oth-list" class="">
+							<li><a href="ne-music.html">Music</a></li>
+							<li><a href="ne-video.html">Video</a></li>
+							<li><a href="ne-picture.html">Picture</a></li>
+						</ul>
+					</li>
+					<li><h4>Submissions</h4>
+						<ul id="sbm-list" class="">
+							<li><a href="ne-outfitters.html">Outfitters</a></li>
+							<li><a href="ne-photography.html">Photography</a></li>
+						</ul>
+					</li>
+					<li><h4>Info</h4>
+						<ul id="l-list" class="">
+							<li><a href="ne-aboutme.html">About Me</a></li>
+							<li><a href="ne-contactme.html">Contacts Me</a></li>
+							<li><a href="ne-map.html">Location</a></li>
+							<li><a href="ne-submit.html">Submit</a></li>
+							<li><a href="ne-faq.html">FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<br>
+				
+				<ul class="social-list">
+				
+					<li><a href=""><img class="icon" src="img/tumblr.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/instagram.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/twitter.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/facebook.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/youtube.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/rss.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/google-plus.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/email.png"/></a></li>
+					<li><a href="ne-map.html"><img class="icon" src="img/marker.png"/></a></li>
+				
+				</ul>
+				
+			</nav>
+		</div>
+		
+		<div class="main-contain">
+		
+			<div class="container-fluid">
+		
+				<div class="ne-row row">
+					<div class="col-md-12">
+						<h1 class="text-center title-text font-one">New Expressions</h1>
+						<h3 class="text-center">Jackets</h3>
+					</div>
+				</div>
+				
+				<div class="row">
+					
+					<h2 class="text-center" style="padding-left: 20px">Men</h2>
+					
+					<br><br><br>
+				
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black & Floral Sleeves Jacket</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/4c37d61687b8a2bdcae372c3fae4a5cc/tumblr_o06t6eboMS1qajhjjo1_500.jpg"/>
+						<p class="text-center">$45.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Bombers Jacket</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/48ab3ab8b74d687e1a4847235b3da3a5/tumblr_o10baxSiaO1qk79z4o1_500.jpg"/>
+						<p class="text-center">$50.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>White Sox Jacket</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/32ad0abb3eb28aeb3a4600fc8a5ffcda/tumblr_o10pecTSHH1s6qm8ko1_r1_500.jpg"/>
+						<p class="text-center">$49.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Green Japanese Jacket</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/14a291d137d419775010d2bc4eeb80e5/tumblr_o10av2bNcN1rm9jy8o1_500.jpg"/>
+						<p class="text-center">$48.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Denim Jacket</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/b60d06d421cee6eab8840c7ba7c8b01d/tumblr_o0sj6nzlk51r9h64ko1_500.jpg"/>
+						<p class="text-center">$52.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Leather Jacket</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/d876c82967c3514865a3efe536a4da28/tumblr_o0z3saON8X1s0prk7o1_500.jpg"/>
+						<p class="text-center">$55.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black - White Stripe Jacket</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/ed248edb63b2c8925550d72d921b053c/tumblr_o07010vlB71qajhjjo1_500.jpg"/>
+						<p class="text-center">$47.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Stussy Jacket</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/d8d2382d6252ea749bb7cb7c92112d86/tumblr_o0de89YTr01rxme2wo1_500.jpg"/>
+						<p class="text-center">$42.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Pitch Black Hoodie</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/753ae85e6be140acbb6b6cc6530b3209/tumblr_o0riddsnm71upyozso1_500.jpg"/>
+						<p class="text-center">$46.00</p>
+					
+					</div>
+				
+				</div>
+				
+				<hr>
+				
+				<div class="row">
+					
+					<h2 class="text-center" style="padding-left: 20px">Women</h2>
+					
+					<br><br><br>
+
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Green/Black Bombers Jacket</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/baaf87bf9c88c7ccd02cc056afadb3fc/tumblr_o11tideA7D1v553o8o2_400.jpg"/>
+						<p class="text-center">$37.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Pink Bombers Jacket</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/5554cc0cc781c5ba8f9dda5f9f742d35/tumblr_o10amzLK9O1qk79z4o1_500.jpg"/>
+						<p class="text-center">$42.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Faux Leather Jacket</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/08c8bff6ed23d835e4872da81f2b6655/tumblr_o0nu0fsa7t1qi73s5o1_500.jpg"/>
+						<p class="text-center">$50.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Grey & Black Bombers Jacket</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/d4ce2e0ed1d64e0b6a5e29cbb2a1608c/tumblr_o0lemqzu2T1sv5umto1_500.jpg"/>
+						<p class="text-center">$44.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Brown Fur Jacket</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/b7c32ce6a609704d10c996fb7e68866f/tumblr_o0fcj2cWZh1uu8vtgo4_500.jpg"/>
+						<p class="text-center">$48.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Jock Hoodie</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/ecd71b60576f327e3b8f6db91f63d82f/tumblr_mnaqj4uiji1s6soa2o1_400.jpg"/>
+						<p class="text-center">$45.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Half & Half Jacket</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/db3f3a8db0339f0fffb85259bb8f0755/tumblr_nc4rn4kuxE1rgeczeo1_500.jpg"/>
+						<p class="text-center">$40.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Motorcycle Jacket</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/6c434b99fe6a41d578b10387591a7601/tumblr_o0hczo2DBQ1u7zo6ko1_500.jpg"/>
+						<p class="text-center">$42.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Red Floral Bombers Jacket</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/7f553adc2681c54e0b47cbbb5a6ef945/tumblr_o0ya07nbzY1uohhhto1_500.jpg"/>
+						<p class="text-center">$44.00</p>
+					
+					</div>
+				
+				</div>
+			
+		</div>
+
+	</body>
+	
+</html>

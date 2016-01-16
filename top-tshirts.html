@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>NE T-shirts</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/jpg" href="l1.jpg">
+		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
+		<script src="jquery.slides.min.js"></script>
+		<script>
+			$(function(){
+				$("#slides").slidesjs({
+					width: 1200,
+					height: 650,
+					start: 1,
+					navigation: {
+						active: true,
+						effect: "slide"
+					},
+					play: {
+						active: true,
+						effect: "slide",
+						interval: 3000,
+						auto: true,
+						swap: true,
+						pauseOnHover: false,
+						restartDelay: 2500
+					}
+				});
+			});
+			var map;
+
+			function initMap() {
+				// Create a map object and specify the DOM element for display.
+				map = new google.maps.Map(document.getElementById('map-div'), {
+					center: {lat: 34.052224, lng: -118.243388},
+					scrollwheel: true,
+					zoom: 11
+				});
+  
+				var marker = new google.maps.Marker({
+					map: map,
+					position: {lat: 34.052224, lng: -118.243388},
+					animation: google.maps.Animation.DROP,
+				});
+  
+				var infowindow = new google.maps.InfoWindow();
+  
+			}
+		</script>
+		<!--<script src="script.js"></script>-->
+	</head>
+	
+	<body>
+
+		<div class="nav-div">
+			<nav class="navigate">
+			
+				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
+				
+				<br>
+				
+				<ul class="links-list">
+					<li><h4>Top</h4>
+						<ul id="top-list" class="">
+							<li><a href="top-shirts.html">Shirts</a></li>
+							<li><a href="top-sleeveless.html">Sleevless</a></li>
+							<li><a href="top-sweaters.html">Sweaters</a></li>
+							<li><a href="top-tshirts.html">T-Shirts</a></li>
+							<li><a href="top-dresses.html">Dresses</a></li>
+							<li><a href="top-hoodies.html">Hoodies</a></li>
+							<li><a href="top-jackets.html">Jackets</a></li>
+						</ul>
+					</li>
+					<li><h4>Bottom</h4>
+						<ul id="bottom-list" class="">
+							<li><a href="bottom-pants.html">Pants</a></li>
+							<li><a href="bottom-shorts.html">Shorts</a></li>
+							<li><a href="bottom-joggers.html">Joggers</a></li>
+							<li><a href="bottom-cargos.html">Cargos</a></li>
+							<li><a href="bottom-skirts.html">Skirts</a></li>
+							<li><a href="bottom-rompers.html">Rompers</a></li>
+							<li><a href="bottom-leggings.html">Leggings</a></li>
+						</ul>
+					</li>
+					<li><h4>Footwear</h4>
+						<ul id="shoes-list" class="">
+							<li><a href="footwear-sneakers.html">Sneakers</a></li>
+							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-slippers.html">Slippers</a></li>
+							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
+							<li><a href="footwear-boots.html">Boots</a></li>
+						</ul>
+					</li>
+					<li><h4>Accessories</h4>
+						<ul id="asc-list" class="">
+							<li><a href="asc-hats.html">Hats</a></li>
+							<li><a href="asc-bracelets.html">Bracelets</a></li>
+							<li><a href="asc-necklaces.html">Necklaces</a></li>
+							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-backpacks.html">Back Pack</a></li>
+							<li><a href="asc-glasses.html">Glasses</a></li>
+							<li><a href="asc-scarfs.html">Scarfs</a></li>
+						</ul>
+					</li>
+					<li><h4><a class="type-one" href="ne-new.html">New</a></h4></li>
+					<li><h4><a class="type-one" href="ne-sale.html">Sale</a></h4></li>
+					<li><h4>Other</h4>
+						<ul id="oth-list" class="">
+							<li><a href="ne-music.html">Music</a></li>
+							<li><a href="ne-video.html">Video</a></li>
+							<li><a href="ne-picture.html">Picture</a></li>
+						</ul>
+					</li>
+					<li><h4>Submissions</h4>
+						<ul id="sbm-list" class="">
+							<li><a href="ne-outfitters.html">Outfitters</a></li>
+							<li><a href="ne-photography.html">Photography</a></li>
+						</ul>
+					</li>
+					<li><h4>Info</h4>
+						<ul id="l-list" class="">
+							<li><a href="ne-aboutme.html">About Me</a></li>
+							<li><a href="ne-contactme.html">Contacts Me</a></li>
+							<li><a href="ne-map.html">Location</a></li>
+							<li><a href="ne-submit.html">Submit</a></li>
+							<li><a href="ne-faq.html">FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<br>
+				
+				<ul class="social-list">
+				
+					<li><a href=""><img class="icon" src="img/tumblr.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/instagram.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/twitter.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/facebook.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/youtube.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/rss.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/google-plus.png"/></a></li>
+					<li><a href=""><img class="icon" src="img/email.png"/></a></li>
+					<li><a href="ne-map.html"><img class="icon" src="img/marker.png"/></a></li>
+				
+				</ul>
+				
+			</nav>
+		</div>
+		
+		<div class="main-contain">
+		
+			<div class="container-fluid">
+		
+				<div class="ne-row row">
+					<div class="col-md-12">
+						<h1 class="text-center title-text font-one">New Expressions</h1>
+						<h3 class="text-center">T-Shirts</h3>
+					</div>
+				</div>
+				
+				<br>
+				
+				<div class="row">
+					
+					<h2 class="text-center" style="padding-left: 20px">Men</h2>
+					
+					<br><br><br>
+				
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Artic Monkeys Shirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/27c89f3770c9981812467319a8300cb6/tumblr_o108ipG7mA1ugxffno1_500.jpg"/>
+						<p class="text-center">$20.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Johnny Cash Shirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/ffca796bc5d8258dacddd2443d3254e3/tumblr_o0nfoqFsgU1rewtyho1_500.jpg"/>
+						<p class="text-center">$18.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Zelda Shirt</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/eed3740ab59a561b26ed5761e1fabd2c/tumblr_o0gnj85S5H1ul3plao1_500.jpg"/>
+						<p class="text-center">$23.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Nirvana Vintage Shirt</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/bf1b88edfb696553107279fe52ec6044/tumblr_o0t2cgH9rU1tvn2oyo1_500.jpg"/>
+						<p class="text-center">$18.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Thieves Shirt</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/5f962901bf1e57c36cd0111bc4559abf/tumblr_o0h8j3kvV81up99oqo1_500.jpg"/>
+						<p class="text-center">$20.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Alien Invader Shirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/322ef93661ddb882b867ae72c164a474/tumblr_o0r8haNgpE1u8h9bho1_500.jpg"/>
+						<p class="text-center">$19.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Badlands Shirt</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/857c752a7511a69eeb02fa7e88a3abf9/tumblr_o0gbimklN01rykel8o1_500.jpg"/>
+						<p class="text-center">$22.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Star Wars Shirt</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/e05843f62d67141dd6131b164707cc7d/tumblr_o0ex0huu6U1suxy2ao1_500.jpg"/>
+						<p class="text-center">$15.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Beetles Raglan</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/5033165773b8e88f16913c9b2e2ee7c9/tumblr_o0qutcmNk51u7sltjo1_500.jpg"/>
+						<p class="text-center">$23.00</p>
+					
+					</div>
+				
+				</div>
+				
+				<hr>
+			
+				<div class="row">
+				
+					<h2 class="text-center" style="padding-left: 20px">Women</h2>
+					
+					<br><br><br>
+				
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Moon Phase Shirt</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/4f55e84599a3a5b05081e87ad068deee/tumblr_o10dcdFVBo1tuo5dpo1_500.jpg"/>
+						<p class="text-center">$12.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>All Against</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/8682f4eb508c54b160f777fa27c47559/tumblr_o10hbjOd201r03h0uo1_500.jpg"/>
+						<p class="text-center">$15.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Little Joy Shirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/096343488345f6c02490434834fb9df8/tumblr_n926zuumhe1t88hmeo1_500.jpg"/>
+						<p class="text-center">$17.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black & Gold Test Shirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/d2138396f936f360891272efae48c9e9/tumblr_o10skvS1fw1qmfjj7o1_500.jpg"/>
+						<p class="text-center">$15.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Kalediscope Shirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/ba339f90bfa64ea3ea4a631729242ea3/tumblr_mr6gfmzLhH1s5vgceo1_500.jpg"/>
+						<p class="text-center">$25.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Orange & Pok-a-dots Shirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/tumblr_may1ylfqJG1rdur6bo1_500.jpg"/>
+						<p class="text-center">$16.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>SpaceShip Shirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/3eee070a928075ff4fdd6d504e686863/tumblr_o10jv2z4mD1sb10aeo1_500.jpg"/>
+						<p class="text-center">$22.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Nike Shirt</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/4cf6405fc2a0064edec6ce9248ebada4/tumblr_o10st8BMpw1uwphu4o1_500.jpg"/>
+						<p class="text-center">$24.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Pink YouTube Shirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/9c53dbb46398488542f1b20b417946d6/tumblr_o10f8fZ6kx1uggd9so1_500.jpg"/>
+						<p class="text-center">$20.00</p>
+					
+					</div>
+				
+				</div>
+				
+			</div>
+			
+		</div>
+
+	</body>
+	
+</html>
