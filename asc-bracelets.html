@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		<title>NE - Location</title>
+		<title>NE Bracelets</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/jpg" href="l1.jpg">
@@ -12,47 +12,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
 		<script src="jquery.slides.min.js"></script>
-		<script>
-			$(function(){
-				$("#slides").slidesjs({
-					width: 1200,
-					height: 650,
-					start: 1,
-					navigation: {
-						active: true,
-						effect: "slide"
-					},
-					play: {
-						active: true,
-						effect: "slide",
-						interval: 3000,
-						auto: true,
-						swap: true,
-						pauseOnHover: false,
-						restartDelay: 2500
-					}
-				});
-			});
-			var map;
-
-			function initMap() {
-				// Create a map object and specify the DOM element for display.
-				map = new google.maps.Map(document.getElementById('map-div'), {
-					center: {lat: 34.052224, lng: -118.243388},
-					scrollwheel: true,
-					zoom: 11
-				});
-  
-				var marker = new google.maps.Marker({
-					map: map,
-					position: {lat: 34.052224, lng: -118.243388},
-					animation: google.maps.Animation.DROP,
-				});
-  
-				var infowindow = new google.maps.InfoWindow();
-  
-			}
-		</script>
+		<script></script>
 		<!--<script src="script.js"></script>-->
 	</head>
 	
@@ -61,9 +21,7 @@
 		<div class="nav-div">
 			<nav class="navigate">
 			
-				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
-				
-				<br>
+				<h3 class="text-center home-text"><a href="ne-home.html">Home</a></h3>
 				
 				<ul class="links-list">
 					<li><h4>Top</h4>
@@ -91,9 +49,8 @@
 					<li><h4>Footwear</h4>
 						<ul id="shoes-list" class="">
 							<li><a href="footwear-sneakers.html">Sneakers</a></li>
-							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-scandals.html">Sandals</a></li>
 							<li><a href="footwear-slippers.html">Slippers</a></li>
-							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
 							<li><a href="footwear-boots.html">Boots</a></li>
 						</ul>
 					</li>
@@ -102,7 +59,7 @@
 							<li><a href="asc-hats.html">Hats</a></li>
 							<li><a href="asc-bracelets.html">Bracelets</a></li>
 							<li><a href="asc-necklaces.html">Necklaces</a></li>
-							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-earrings.html">Earrings</a></li>
 							<li><a href="asc-backpacks.html">Back Pack</a></li>
 							<li><a href="asc-glasses.html">Glasses</a></li>
 							<li><a href="asc-scarfs.html">Scarfs</a></li>
@@ -160,42 +117,122 @@
 				<div class="ne-row row">
 					<div class="col-md-12">
 						<h1 class="text-center title-text font-one">New Expressions</h1>
-						<!--<h3 class="text-center">with Great Impressions</h3>-->
+						<h3 class="text-center">Bracelets</h3>
 					</div>
 				</div>
-				
-				
 			
 				<div class="row">
 				
-					<div class="col-md-12">
+					<h2 class="text-center" style="padding-left: 20px">Men</h2>
 					
-						<h2 class="text-center font-one">Location</h2>
-						
-						<br>
+					<br><br><br>
 					
-						<div id="map-div">
-						
-						</div>
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Anchor Bracelet</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/45c1fe6e7812914b52243b5e886546a4/tumblr_o1gu23fWWr1u0nppuo1_500.jpg"/>
+						<p class="text-center">$10.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Volcano Rocks Bracelet</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/9df40d840c6385a0f2c4418ec33f18bc/tumblr_n8jtqiOBa41rirns7o1_500.jpg"/>
+						<p class="text-center">$13.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Whale Tail Bracelet</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/13d27b904d982d4d22b0283a31df9a16/tumblr_nz52a5jK7E1u7z8mso1_500.jpg"/>
+						<p class="text-center">$12.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Cool Multi-Color Bracelet</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/63868714c5e3ae72611fce37009f1e86/tumblr_nc5egeEKs01rirns7o1_500.jpg"/>
+						<p class="text-center">$14.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Brown Leather Bracelet</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/069ff2125e8ae2fae51d9609a44dca47/tumblr_nqw6csVXOB1u7z8mso1_500.jpg"/>
+						<p class="text-center">$12.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Skull Bracelet</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/176a534f9d0bdbbfba16c80eacd54861/tumblr_nkbj3nNZfT1u8peaho1_500.jpg"/>
+						<p class="text-center">$11.00</p>
 					
 					</div>
 				
 				</div>
 				
-				<br>
 				<hr>
 				
 				<div class="row">
 				
-					<div class="col-md-12">
-						<center>
-							<p style="padding: 10px;">We are located in none other than, Los Angeles California!</p>
-							<p style="padding: 10px;">We normally only ship domestic. If you order from another country, special conditions will apply.</p>
-							<p style="padding: 10px;">We have various items that are custom and hand-made. So anything you see with a star next to it,
-							is unique. Buy it and you will be the only one with that product!</p>
-						</center>
+					<h2 class="text-center" style="padding-left: 20px">Women</h2>
+					
+					<br><br><br>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Turqoise Anchor Bracelet</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/098eaaab28868df571d90dc23f7ce08d/tumblr_n8w0g6deA41twp0e7o1_500.jpg"/>
+						<p class="text-center">$15.00</p>
+					
 					</div>
-
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Pearl Cross Bracelet</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/1e2312bae57574341932677b5735a66f/tumblr_o1d5syqhPb1u6oj2jo1_500.jpg"/>
+						<p class="text-center">$13.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Diamond Bracelet</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/a53b9c5c519c104125c88f9c6cab837e/tumblr_o14oedcbvr1ttn4pio1_500.jpg"/>
+						<p class="text-center">$16.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Silver Bangle Bracelet</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/2423563b92eb13c329dae0d5eed2a3d1/tumblr_nxjl5rzULE1ukpkz2o2_1280.jpg"/>
+						<p class="text-center">$11.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Gold Plated Bracelet</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/1388467f74bff93d8aa44a3acb77cdd8/tumblr_nx8altSR3a1ukpkz2o7_500.jpg"/>
+						<p class="text-center">$17.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Antique Clock Bracelet</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/dfb006710f1dadbbf50a7dca98d430a9/tumblr_o0ws9bBldz1sdyq8ao1_500.jpg"/>
+						<p class="text-center">$16..</p>
+					
+					</div>
+				
 				</div>
 				
 			</div>

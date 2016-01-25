@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		<title>NE - Location</title>
+		<title>NE Sale</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/jpg" href="l1.jpg">
@@ -13,45 +13,7 @@
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
 		<script src="jquery.slides.min.js"></script>
 		<script>
-			$(function(){
-				$("#slides").slidesjs({
-					width: 1200,
-					height: 650,
-					start: 1,
-					navigation: {
-						active: true,
-						effect: "slide"
-					},
-					play: {
-						active: true,
-						effect: "slide",
-						interval: 3000,
-						auto: true,
-						swap: true,
-						pauseOnHover: false,
-						restartDelay: 2500
-					}
-				});
-			});
-			var map;
-
-			function initMap() {
-				// Create a map object and specify the DOM element for display.
-				map = new google.maps.Map(document.getElementById('map-div'), {
-					center: {lat: 34.052224, lng: -118.243388},
-					scrollwheel: true,
-					zoom: 11
-				});
-  
-				var marker = new google.maps.Marker({
-					map: map,
-					position: {lat: 34.052224, lng: -118.243388},
-					animation: google.maps.Animation.DROP,
-				});
-  
-				var infowindow = new google.maps.InfoWindow();
-  
-			}
+			
 		</script>
 		<!--<script src="script.js"></script>-->
 	</head>
@@ -61,9 +23,7 @@
 		<div class="nav-div">
 			<nav class="navigate">
 			
-				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
-				
-				<br>
+				<h3 class="text-center home-text"><a href="ne-home.html">Home</a></h3>
 				
 				<ul class="links-list">
 					<li><h4>Top</h4>
@@ -91,9 +51,8 @@
 					<li><h4>Footwear</h4>
 						<ul id="shoes-list" class="">
 							<li><a href="footwear-sneakers.html">Sneakers</a></li>
-							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-scandals.html">Sandals</a></li>
 							<li><a href="footwear-slippers.html">Slippers</a></li>
-							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
 							<li><a href="footwear-boots.html">Boots</a></li>
 						</ul>
 					</li>
@@ -102,7 +61,7 @@
 							<li><a href="asc-hats.html">Hats</a></li>
 							<li><a href="asc-bracelets.html">Bracelets</a></li>
 							<li><a href="asc-necklaces.html">Necklaces</a></li>
-							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-earrings.html">Earrings</a></li>
 							<li><a href="asc-backpacks.html">Back Pack</a></li>
 							<li><a href="asc-glasses.html">Glasses</a></li>
 							<li><a href="asc-scarfs.html">Scarfs</a></li>
@@ -160,42 +119,70 @@
 				<div class="ne-row row">
 					<div class="col-md-12">
 						<h1 class="text-center title-text font-one">New Expressions</h1>
-						<!--<h3 class="text-center">with Great Impressions</h3>-->
+						<h3 class="text-center">Sale Items</h3>
 					</div>
 				</div>
-				
-				
-			
-				<div class="row">
-				
-					<div class="col-md-12">
-					
-						<h2 class="text-center font-one">Location</h2>
-						
-						<br>
-					
-						<div id="map-div">
-						
-						</div>
-					
-					</div>
-				
-				</div>
-				
-				<br>
-				<hr>
-				
-				<div class="row">
-				
-					<div class="col-md-12">
-						<center>
-							<p style="padding: 10px;">We are located in none other than, Los Angeles California!</p>
-							<p style="padding: 10px;">We normally only ship domestic. If you order from another country, special conditions will apply.</p>
-							<p style="padding: 10px;">We have various items that are custom and hand-made. So anything you see with a star next to it,
-							is unique. Buy it and you will be the only one with that product!</p>
-						</center>
-					</div>
 
+				<div class="row">
+				
+					<h2 class="text-center">Men</h2>
+				
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/c00bf9f3857d229eb46b26b9dd47313d/tumblr_o1fw1125Q11u0nppuo1_500.jpg"/>
+						<p class="text-center"></p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/865e1173415c4a56060316222d1706be/tumblr_o14c09oTSK1u9fil9o1_500.jpg"/>
+						<p class="text-center"></p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/322ef93661ddb882b867ae72c164a474/tumblr_o0r8haNgpE1u8h9bho1_500.jpg"/>
+						<p class="text-center"></p>
+					
+					</div>
+				
+				</div>
+				
+				<hr>
+
+				<div class="row">
+				
+					<h2 class="text-center">Women</h2>
+				
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/a45be4a1f30e92e44f5aa3b1eab7406e/tumblr_n9na7kDTGw1rsto25o1_500.jpg"/>
+						<p class="text-center"></p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/a07ebd2055db0b5dc48ef32ab64115c9/tumblr_nmue3v4d7s1s4ypgao1_500.jpg"/>
+						<p class="text-center"></p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b></b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/be29704559e1abd0479fa27fd5167a67/tumblr_o1hi71rGqW1v2qd8jo1_500.jpg"/>
+						<p class="text-center"></p>
+					
+					</div>
+				
 				</div>
 				
 			</div>

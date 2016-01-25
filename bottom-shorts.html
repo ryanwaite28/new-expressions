@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		<title>NE - Location</title>
+		<title>NE Shorts</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/jpg" href="l1.jpg">
@@ -12,47 +12,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
 		<script src="jquery.slides.min.js"></script>
-		<script>
-			$(function(){
-				$("#slides").slidesjs({
-					width: 1200,
-					height: 650,
-					start: 1,
-					navigation: {
-						active: true,
-						effect: "slide"
-					},
-					play: {
-						active: true,
-						effect: "slide",
-						interval: 3000,
-						auto: true,
-						swap: true,
-						pauseOnHover: false,
-						restartDelay: 2500
-					}
-				});
-			});
-			var map;
-
-			function initMap() {
-				// Create a map object and specify the DOM element for display.
-				map = new google.maps.Map(document.getElementById('map-div'), {
-					center: {lat: 34.052224, lng: -118.243388},
-					scrollwheel: true,
-					zoom: 11
-				});
-  
-				var marker = new google.maps.Marker({
-					map: map,
-					position: {lat: 34.052224, lng: -118.243388},
-					animation: google.maps.Animation.DROP,
-				});
-  
-				var infowindow = new google.maps.InfoWindow();
-  
-			}
-		</script>
+		<script></script>
 		<!--<script src="script.js"></script>-->
 	</head>
 	
@@ -61,9 +21,7 @@
 		<div class="nav-div">
 			<nav class="navigate">
 			
-				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
-				
-				<br>
+				<h3 class="text-center home-text"><a href="ne-home.html">Home</a></h3>
 				
 				<ul class="links-list">
 					<li><h4>Top</h4>
@@ -91,9 +49,8 @@
 					<li><h4>Footwear</h4>
 						<ul id="shoes-list" class="">
 							<li><a href="footwear-sneakers.html">Sneakers</a></li>
-							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-scandals.html">Sandals</a></li>
 							<li><a href="footwear-slippers.html">Slippers</a></li>
-							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
 							<li><a href="footwear-boots.html">Boots</a></li>
 						</ul>
 					</li>
@@ -102,7 +59,7 @@
 							<li><a href="asc-hats.html">Hats</a></li>
 							<li><a href="asc-bracelets.html">Bracelets</a></li>
 							<li><a href="asc-necklaces.html">Necklaces</a></li>
-							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-earrings.html">Earrings</a></li>
 							<li><a href="asc-backpacks.html">Back Pack</a></li>
 							<li><a href="asc-glasses.html">Glasses</a></li>
 							<li><a href="asc-scarfs.html">Scarfs</a></li>
@@ -160,42 +117,122 @@
 				<div class="ne-row row">
 					<div class="col-md-12">
 						<h1 class="text-center title-text font-one">New Expressions</h1>
-						<!--<h3 class="text-center">with Great Impressions</h3>-->
+						<h3 class="text-center">Shorts</h3>
 					</div>
 				</div>
-				
-				
 			
 				<div class="row">
 				
-					<div class="col-md-12">
+					<h2 class="text-center" style="padding-left: 20px">Men</h2>
 					
-						<h2 class="text-center font-one">Location</h2>
-						
-						<br>
+					<br><br><br>
 					
-						<div id="map-div">
-						
-						</div>
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>White Ripped Shorts</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/18ad09b57f1e56fcfc29c3b0f625a6a7/tumblr_no7bl14np71s968deo1_500.jpg"/>
+						<p class="text-center">$35.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Dark Grey Shorts</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/7f174b1f346a22cb71ef91ea11d71aca/tumblr_n5hok246VO1qc4zmno1_500.jpg"/>
+						<p class="text-center">$32.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Blue Silk Shorts</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/28a7304c4f7acf5e91ab168a95687de7/tumblr_o0whe6QeAK1qajhjjo1_500.jpg"/>
+						<p class="text-center">$39.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Light Beige Shorts</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/087f463da588c6ad82d18cba32225736/tumblr_o143fu5RIx1qajhjjo1_500.jpg"/>
+						<p class="text-center">$33.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Solid Red Shorts</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/2879e70a45c7ab0511ea34214d0bdc46/tumblr_n9zwzmRLot1tj6nbqo1_500.jpg"/>
+						<p class="text-center">$31.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>White Long Slim Shorts</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/77e989791d6ae4ee4cd8a34ee1e45936/tumblr_n9kp13uJgF1tcsj92o1_500.jpg"/>
+						<p class="text-center">$38.00</p>
 					
 					</div>
 				
 				</div>
 				
-				<br>
 				<hr>
 				
 				<div class="row">
 				
-					<div class="col-md-12">
-						<center>
-							<p style="padding: 10px;">We are located in none other than, Los Angeles California!</p>
-							<p style="padding: 10px;">We normally only ship domestic. If you order from another country, special conditions will apply.</p>
-							<p style="padding: 10px;">We have various items that are custom and hand-made. So anything you see with a star next to it,
-							is unique. Buy it and you will be the only one with that product!</p>
-						</center>
+					<h2 class="text-center" style="padding-left: 20px">Women</h2>
+					
+					<br><br><br>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Denim Short Shorts Cuffed</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/6491d5fdfa9992cdc5747351ed06f847/tumblr_n7pq683SI71tqnsn7o1_500.jpg"/>
+						<p class="text-center">$29.00</p>
+					
 					</div>
-
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black & White Plaid Shorts</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/e8701056359c5dbccad9c0e893b0582b/tumblr_nz0uo65Kbd1s31er9o1_400.jpg"/>
+						<p class="text-center">$33.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Summer Style Shorts</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/60575085cca9b7772f1445c1bce5e751/tumblr_ns8nv5nkDS1u8rumlo1_500.jpg"/>
+						<p class="text-center">$28.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Ripped Short Shorts</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/1e60a48b5c8f714b700fa6e05b853678/tumblr_nxtmlo0ruX1r6drupo1_500.jpg"/>
+						<p class="text-center">$32.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Plaid Slim Shorts</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/d7c5ec204659b7c1eece277c64c613d3/tumblr_n7r8pxslE11tqnsn7o1_500.jpg"/>
+						<p class="text-center">$30.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>White Shorts w/Zipper</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/8f8a464633c44bd47f5e6dac2dc2f78e/tumblr_n0z6tkJrXK1suzs9ao1_500.jpg"/>
+						<p class="text-center">$31.00</p>
+					
+					</div>
+				
 				</div>
 				
 			</div>

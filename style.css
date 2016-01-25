@@ -8,6 +8,36 @@ hr {
 	border-color: black;
 }
 
+.home-text {
+	display: block;
+    margin: 0;
+    padding: 20px;
+    background-color: lightgrey;
+	opacity: 0.7;
+	text-decoration: none;
+	-webkit-transition: transition 0.3s;
+	transition: 0.3s;
+}
+
+.home-text:hover {
+	opacity: 1.0;
+	background-color: #a6a6a6;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.home-text a {
+	color: black;
+	-webkit-transition: transition 0.3s;
+	transition: 0.3s;
+}
+
+.home-text a:hover {
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+}
+
 .font-one {
 	font-family: 'Kaushan Script', cursive;
 }
@@ -51,7 +81,7 @@ hr {
 }
 
 .nav-div {
-	width: 175px;
+	width: 200px;
 	height: 100vh;
 	background-color: #e6e6e6;
 	overflow-y: scroll;
@@ -64,8 +94,13 @@ hr {
 	height: 100vh;
 	overflow-y: scroll;
 	float: left;
-	width: calc(100% - 175px);
+	width: calc(100% - 200px);
 }
+
+.col-md-4 {
+	margin-bottom: 35px;
+}
+
 .nav-div::-webkit-scrollbar{ 
     display: none; 
 }
@@ -82,7 +117,7 @@ hr {
 }
 
 .links-list li:hover {
-	opacity: 0.8;
+	opacity: 1.0;
 	background-color: #a6a6a6;
 	transition: 0.3s;
 }
@@ -183,8 +218,7 @@ hr {
 	margin: auto;
 	padding: 10px;
 	width: 100%;
-	max-width: 575px;
-	height: 60vh;
+	height: 65vh;
 	-webkit-transition: transition 0.3s;
 	transition: 0.3s;
 }
@@ -192,4 +226,39 @@ hr {
 .present-img:hover {
 	opacity: 0.7;
 	transition: 0.3s;
+}
+
+.music-frame {
+	border: none;
+	width: 95%;
+	display: block;
+	margin: auto;
+	margin-bottom: 30px;
+	height: 50vh;
+}
+
+.p-img {
+	width: 95%;
+	display: block;
+	margin: auto;
+	height: 50vh;
+	margin: 15px;
+}
+
+/*   Media Queries   */
+
+@media (max-width: 675px) {
+	
+	.present-img {
+		width: ;
+	}
+	
+}
+
+@media (max-width: 992px) {
+	
+	.present-img {
+		width: ;
+	}
+	
 }

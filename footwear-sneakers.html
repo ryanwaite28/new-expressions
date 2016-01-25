@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		<title>NE - Location</title>
+		<title>NE Sneakers</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/jpg" href="l1.jpg">
@@ -12,47 +12,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
 		<script src="jquery.slides.min.js"></script>
-		<script>
-			$(function(){
-				$("#slides").slidesjs({
-					width: 1200,
-					height: 650,
-					start: 1,
-					navigation: {
-						active: true,
-						effect: "slide"
-					},
-					play: {
-						active: true,
-						effect: "slide",
-						interval: 3000,
-						auto: true,
-						swap: true,
-						pauseOnHover: false,
-						restartDelay: 2500
-					}
-				});
-			});
-			var map;
-
-			function initMap() {
-				// Create a map object and specify the DOM element for display.
-				map = new google.maps.Map(document.getElementById('map-div'), {
-					center: {lat: 34.052224, lng: -118.243388},
-					scrollwheel: true,
-					zoom: 11
-				});
-  
-				var marker = new google.maps.Marker({
-					map: map,
-					position: {lat: 34.052224, lng: -118.243388},
-					animation: google.maps.Animation.DROP,
-				});
-  
-				var infowindow = new google.maps.InfoWindow();
-  
-			}
-		</script>
+		<script></script>
 		<!--<script src="script.js"></script>-->
 	</head>
 	
@@ -61,9 +21,7 @@
 		<div class="nav-div">
 			<nav class="navigate">
 			
-				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
-				
-				<br>
+				<h3 class="text-center home-text"><a href="ne-home.html">Home</a></h3>
 				
 				<ul class="links-list">
 					<li><h4>Top</h4>
@@ -91,9 +49,8 @@
 					<li><h4>Footwear</h4>
 						<ul id="shoes-list" class="">
 							<li><a href="footwear-sneakers.html">Sneakers</a></li>
-							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-scandals.html">Sandals</a></li>
 							<li><a href="footwear-slippers.html">Slippers</a></li>
-							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
 							<li><a href="footwear-boots.html">Boots</a></li>
 						</ul>
 					</li>
@@ -102,7 +59,7 @@
 							<li><a href="asc-hats.html">Hats</a></li>
 							<li><a href="asc-bracelets.html">Bracelets</a></li>
 							<li><a href="asc-necklaces.html">Necklaces</a></li>
-							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-earrings.html">Earrings</a></li>
 							<li><a href="asc-backpacks.html">Back Pack</a></li>
 							<li><a href="asc-glasses.html">Glasses</a></li>
 							<li><a href="asc-scarfs.html">Scarfs</a></li>
@@ -160,42 +117,122 @@
 				<div class="ne-row row">
 					<div class="col-md-12">
 						<h1 class="text-center title-text font-one">New Expressions</h1>
-						<!--<h3 class="text-center">with Great Impressions</h3>-->
+						<h3 class="text-center">Sneakers</h3>
 					</div>
 				</div>
-				
-				
 			
 				<div class="row">
 				
-					<div class="col-md-12">
+					<h2 class="text-center" style="padding-left: 20px">Men</h2>
 					
-						<h2 class="text-center font-one">Location</h2>
-						
-						<br>
+					<br><br><br>
 					
-						<div id="map-div">
-						
-						</div>
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Red Nike Air Max</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/fd1e8ffd8540f371e1d19de71c3df71b/tumblr_o1fdmc390B1uqsqdgo1_500.jpg"/>
+						<p class="text-center">$85.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Blue Suede Sneakers</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/1a148ea77a894c4640c9b9eeea739135/tumblr_o13hez62gU1uqsqdgo1_500.jpg"/>
+						<p class="text-center">$100.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Chrome Zip High Tops</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/tumblr_m1d7g9dC9f1qgbq7uo1_500.jpg"/>
+						<p class="text-center">$120.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Givenchy Star Sneakers</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/tumblr_m9wfpol1rD1qgbq7uo1_540.jpg"/>
+						<p class="text-center">$200.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Swag Gucci Sneakers</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/tumblr_m7azt6ZNPV1qgbq7uo1_500.jpg"/>
+						<p class="text-center">$250.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Snake-Pattern Sneakers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/204e03255648092657a1dba0ab68a563/tumblr_mghoteIN6r1qgbq7uo1_1280.jpg"/>
+						<p class="text-center">$150.00</p>
 					
 					</div>
 				
 				</div>
 				
-				<br>
 				<hr>
 				
 				<div class="row">
 				
-					<div class="col-md-12">
-						<center>
-							<p style="padding: 10px;">We are located in none other than, Los Angeles California!</p>
-							<p style="padding: 10px;">We normally only ship domestic. If you order from another country, special conditions will apply.</p>
-							<p style="padding: 10px;">We have various items that are custom and hand-made. So anything you see with a star next to it,
-							is unique. Buy it and you will be the only one with that product!</p>
-						</center>
+					<h2 class="text-center" style="padding-left: 20px">Women</h2>
+					
+					<br><br><br>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Teal Blue Sneakers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/cb0b0416f033d71869e1ca8a0538ad3a/tumblr_o1fh67eJKp1qi73s5o1_500.jpg"/>
+						<p class="text-center">$75.00</p>
+					
 					</div>
-
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Green Glow & WHite Sneakers</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/eef568847f598a31a8bc0bf49a370b37/tumblr_o1ghhhgiqx1uqsqdgo1_500.jpg"/>
+						<p class="text-center">$82.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Round Heel Sneakers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/1163508404038c072e86fa60fce5f16e/tumblr_mrytgzy5Wq1ss0knjo1_500.jpg"/>
+						<p class="text-center">$93.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Multi-Color Sneakers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/31a2bc6011606b1a10db24de53c63f91/tumblr_nb67ptfotK1t0fp62o1_500.jpg"/>
+						<p class="text-center">$97.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Grey Training Sneakers</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/7338ec72a3f4157ec59ac6a6515c8ae7/tumblr_o0pv6vI0rZ1uqsqdgo1_500.jpg"/>
+						<p class="text-center">$88.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black w/Purple Light Sneakers</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/9ef5bd93dd49ad7562fa34ec01bd9ce1/tumblr_nt9e636oPR1uv2s7ao1_500.jpg"/>
+						<p class="text-center">$100.00</p>
+					
+					</div>
+				
 				</div>
 				
 			</div>

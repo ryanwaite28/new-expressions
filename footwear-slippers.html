@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		<title>NE - Location</title>
+		<title>NE Slippers</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/jpg" href="l1.jpg">
@@ -12,47 +12,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
 		<script src="jquery.slides.min.js"></script>
-		<script>
-			$(function(){
-				$("#slides").slidesjs({
-					width: 1200,
-					height: 650,
-					start: 1,
-					navigation: {
-						active: true,
-						effect: "slide"
-					},
-					play: {
-						active: true,
-						effect: "slide",
-						interval: 3000,
-						auto: true,
-						swap: true,
-						pauseOnHover: false,
-						restartDelay: 2500
-					}
-				});
-			});
-			var map;
-
-			function initMap() {
-				// Create a map object and specify the DOM element for display.
-				map = new google.maps.Map(document.getElementById('map-div'), {
-					center: {lat: 34.052224, lng: -118.243388},
-					scrollwheel: true,
-					zoom: 11
-				});
-  
-				var marker = new google.maps.Marker({
-					map: map,
-					position: {lat: 34.052224, lng: -118.243388},
-					animation: google.maps.Animation.DROP,
-				});
-  
-				var infowindow = new google.maps.InfoWindow();
-  
-			}
-		</script>
+		<script></script>
 		<!--<script src="script.js"></script>-->
 	</head>
 	
@@ -61,9 +21,7 @@
 		<div class="nav-div">
 			<nav class="navigate">
 			
-				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
-				
-				<br>
+				<h3 class="text-center home-text"><a href="ne-home.html">Home</a></h3>
 				
 				<ul class="links-list">
 					<li><h4>Top</h4>
@@ -91,9 +49,8 @@
 					<li><h4>Footwear</h4>
 						<ul id="shoes-list" class="">
 							<li><a href="footwear-sneakers.html">Sneakers</a></li>
-							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-scandals.html">Sandals</a></li>
 							<li><a href="footwear-slippers.html">Slippers</a></li>
-							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
 							<li><a href="footwear-boots.html">Boots</a></li>
 						</ul>
 					</li>
@@ -102,7 +59,7 @@
 							<li><a href="asc-hats.html">Hats</a></li>
 							<li><a href="asc-bracelets.html">Bracelets</a></li>
 							<li><a href="asc-necklaces.html">Necklaces</a></li>
-							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-earrings.html">Earrings</a></li>
 							<li><a href="asc-backpacks.html">Back Pack</a></li>
 							<li><a href="asc-glasses.html">Glasses</a></li>
 							<li><a href="asc-scarfs.html">Scarfs</a></li>
@@ -160,42 +117,122 @@
 				<div class="ne-row row">
 					<div class="col-md-12">
 						<h1 class="text-center title-text font-one">New Expressions</h1>
-						<!--<h3 class="text-center">with Great Impressions</h3>-->
+						<h3 class="text-center">Slippers</h3>
 					</div>
 				</div>
-				
-				
 			
 				<div class="row">
 				
-					<div class="col-md-12">
+					<h2 class="text-center" style="padding-left: 20px">Men</h2>
 					
-						<h2 class="text-center font-one">Location</h2>
-						
-						<br>
+					<br><br><br>
 					
-						<div id="map-div">
-						
-						</div>
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Red Casual Slippers</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/e7d721006b41db51d54af863dafa0bab/tumblr_o10fsorsTQ1tzw9c8o1_500.jpg"/>
+						<p class="text-center">$38.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Leather Slippers</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/93c92a3fc9e20e6fb68f779427f5ba0a/tumblr_mhu7zcCt5A1rm3tywo1_500.jpg"/>
+						<p class="text-center">$40.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Ugg Slippers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/3a1991a8ea9e966c4c5abcc306a81e0f/tumblr_o0w1oqS17V1teffxlo1_500.jpg"/>
+						<p class="text-center">$55.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Wool Slippers</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/4d7bb2580cc7c215ab361b2b8d2b7a10/tumblr_o0zeamY0KX1qzhfbwo1_500.jpg"/>
+						<p class="text-center">$49.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Homer Slippers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/8ffeab3882bf438d572869037c2a5899/tumblr_o0lq386h9g1tdhrpqo1_400.jpg"/>
+						<p class="text-center">$41.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Knitted Slippers</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/e478c1aadfc738531778776c0570ecde/tumblr_o1dlo8ea851uyzmyco1_500.jpg"/>
+						<p class="text-center">$45.00</p>
 					
 					</div>
 				
 				</div>
 				
-				<br>
 				<hr>
 				
 				<div class="row">
 				
-					<div class="col-md-12">
-						<center>
-							<p style="padding: 10px;">We are located in none other than, Los Angeles California!</p>
-							<p style="padding: 10px;">We normally only ship domestic. If you order from another country, special conditions will apply.</p>
-							<p style="padding: 10px;">We have various items that are custom and hand-made. So anything you see with a star next to it,
-							is unique. Buy it and you will be the only one with that product!</p>
-						</center>
+					<h2 class="text-center" style="padding-left: 20px">Women</h2>
+					
+					<br><br><br>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Ugg Slippers w/Pink Laces</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/9abbdf2a890e9362b1af6f18c0c5b5e5/tumblr_o1a2otQ6iE1syptn6o1_500.jpg"/>
+						<p class="text-center">$40.00</p>
+					
 					</div>
-
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Solid Pink Knitted Slippers</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/b894c8823c23bf7671253c8730dc0f9b/tumblr_o16vc0Db161qzhfbwo1_500.jpg"/>
+						<p class="text-center">$39.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Grey Flower Slippers</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/3724c20122044265cffca70ec97a9e29/tumblr_mzjy7gcZVm1qbkeq0o1_500.jpg"/>
+						<p class="text-center">$41.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Minions Slippers</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/c1182898a36a31bd71ff4acbb91f801e/tumblr_nabcni4qBb1ragyl5o1_500.jpg"/>
+						<p class="text-center">$42.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Jake (Adventure Time) Slippers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/50ce8bf957729d4ff3a16eae48447e5f/tumblr_o17vyhNouu1u3h44jo1_500.jpg"/>
+						<p class="text-center">$40.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Beige Knitted Slippers</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/2224bd8758f92fee3b7a32756538d88b/tumblr_ngm2vaajYB1rttv9bo1_500.jpg"/>
+						<p class="text-center">$43.00</p>
+					
+					</div>
+				
 				</div>
 				
 			</div>

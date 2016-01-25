@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		<title>NE - Location</title>
+		<title>NE Boots</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/jpg" href="l1.jpg">
@@ -12,47 +12,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
 		<script src="jquery.slides.min.js"></script>
-		<script>
-			$(function(){
-				$("#slides").slidesjs({
-					width: 1200,
-					height: 650,
-					start: 1,
-					navigation: {
-						active: true,
-						effect: "slide"
-					},
-					play: {
-						active: true,
-						effect: "slide",
-						interval: 3000,
-						auto: true,
-						swap: true,
-						pauseOnHover: false,
-						restartDelay: 2500
-					}
-				});
-			});
-			var map;
-
-			function initMap() {
-				// Create a map object and specify the DOM element for display.
-				map = new google.maps.Map(document.getElementById('map-div'), {
-					center: {lat: 34.052224, lng: -118.243388},
-					scrollwheel: true,
-					zoom: 11
-				});
-  
-				var marker = new google.maps.Marker({
-					map: map,
-					position: {lat: 34.052224, lng: -118.243388},
-					animation: google.maps.Animation.DROP,
-				});
-  
-				var infowindow = new google.maps.InfoWindow();
-  
-			}
-		</script>
+		<script></script>
 		<!--<script src="script.js"></script>-->
 	</head>
 	
@@ -61,9 +21,7 @@
 		<div class="nav-div">
 			<nav class="navigate">
 			
-				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
-				
-				<br>
+				<h3 class="text-center home-text"><a href="ne-home.html">Home</a></h3>
 				
 				<ul class="links-list">
 					<li><h4>Top</h4>
@@ -93,7 +51,6 @@
 							<li><a href="footwear-sneakers.html">Sneakers</a></li>
 							<li><a href="footwear-scandals.html">Scandals</a></li>
 							<li><a href="footwear-slippers.html">Slippers</a></li>
-							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
 							<li><a href="footwear-boots.html">Boots</a></li>
 						</ul>
 					</li>
@@ -102,7 +59,7 @@
 							<li><a href="asc-hats.html">Hats</a></li>
 							<li><a href="asc-bracelets.html">Bracelets</a></li>
 							<li><a href="asc-necklaces.html">Necklaces</a></li>
-							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-earrings.html">Earrings</a></li>
 							<li><a href="asc-backpacks.html">Back Pack</a></li>
 							<li><a href="asc-glasses.html">Glasses</a></li>
 							<li><a href="asc-scarfs.html">Scarfs</a></li>
@@ -160,42 +117,122 @@
 				<div class="ne-row row">
 					<div class="col-md-12">
 						<h1 class="text-center title-text font-one">New Expressions</h1>
-						<!--<h3 class="text-center">with Great Impressions</h3>-->
+						<h3 class="text-center">Boots</h3>
 					</div>
 				</div>
-				
-				
 			
 				<div class="row">
 				
-					<div class="col-md-12">
+					<h2 class="text-center" style="padding-left: 20px">Men</h2>
 					
-						<h2 class="text-center font-one">Location</h2>
-						
-						<br>
+					<br><br><br>
 					
-						<div id="map-div">
-						
-						</div>
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Brown Leather Boots</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/0e00dbd81f02c624377474e9c1d208a3/tumblr_nhmngq4B5H1s04uclo1_500.jpg"/>
+						<p class="text-center">$66.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Vintage Boots</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/7b67950f90dff5cfcc3be2f8d8570ec0/tumblr_n9t0w8Yr4s1s3yrj2o1_500.jpg"/>
+						<p class="text-center">$68.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Light Brown Flashy Boots</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/tumblr_m4sah6316V1rx5cc1o1_500.jpg"/>
+						<p class="text-center">$67.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Tactical Boots</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/tumblr_lwa3zuKUXf1r6kbc0o1_500.jpg"/>
+						<p class="text-center">$64.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Blue Suede Boots</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/tumblr_m4sahi0yvH1rx5cc1o1_500.jpg"/>
+						<p class="text-center">$59.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Denim Canvas Boots</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/de4a4a582556e62f00c2df297cc2bacb/tumblr_ni0r1ycStl1tvk2lko1_500.jpg"/>
+						<p class="text-center">$72.00</p>
 					
 					</div>
 				
 				</div>
 				
-				<br>
 				<hr>
 				
 				<div class="row">
 				
-					<div class="col-md-12">
-						<center>
-							<p style="padding: 10px;">We are located in none other than, Los Angeles California!</p>
-							<p style="padding: 10px;">We normally only ship domestic. If you order from another country, special conditions will apply.</p>
-							<p style="padding: 10px;">We have various items that are custom and hand-made. So anything you see with a star next to it,
-							is unique. Buy it and you will be the only one with that product!</p>
-						</center>
+					<h2 class="text-center" style="padding-left: 20px">Women</h2>
+					
+					<br><br><br>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Mid Top Boots</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/cccbc029a7f28ca3c2a9fcefb6e5e574/tumblr_nb9njjzt2m1so18wzo1_500.jpg"/>
+						<p class="text-center">$44.00</p>
+					
 					</div>
-
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Red Winter Boots</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/ace59fc96792f885ad7cb03269435992/tumblr_mwnsfk5XLB1ss0knjo1_500.jpg"/>
+						<p class="text-center">$50.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Light Brown Boots</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/d4e6607c7d299def9565aba20a8c1e3c/tumblr_mwg4vtzaFe1ss0knjo1_500.png"/>
+						<p class="text-center">$47.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Shiny Leather Boots</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/90f21dd6f6fde6a0c595340156e4062f/tumblr_mrfxf5oWX91ss0knjo1_500.jpg"/>
+						<p class="text-center">$51.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Velvet Elegent Boots</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/fdf90e9432398adeeef8820c2fea9faf/tumblr_mu1qawBNrg1ss0knjo1_500.jpg"/>
+						<p class="text-center">$54.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Long Fur Boots</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/374afb786b7b83b4374d6e3be8e12eb4/tumblr_n5lbnezglb1suzs9ao1_400.jpg"/>
+						<p class="text-center">$55.00</p>
+					
+					</div>
+				
 				</div>
 				
 			</div>

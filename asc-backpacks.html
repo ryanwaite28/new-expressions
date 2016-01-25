@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		<title>NE - Location</title>
+		<title>NE BackPacks</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/jpg" href="l1.jpg">
@@ -12,47 +12,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
 		<script src="jquery.slides.min.js"></script>
-		<script>
-			$(function(){
-				$("#slides").slidesjs({
-					width: 1200,
-					height: 650,
-					start: 1,
-					navigation: {
-						active: true,
-						effect: "slide"
-					},
-					play: {
-						active: true,
-						effect: "slide",
-						interval: 3000,
-						auto: true,
-						swap: true,
-						pauseOnHover: false,
-						restartDelay: 2500
-					}
-				});
-			});
-			var map;
-
-			function initMap() {
-				// Create a map object and specify the DOM element for display.
-				map = new google.maps.Map(document.getElementById('map-div'), {
-					center: {lat: 34.052224, lng: -118.243388},
-					scrollwheel: true,
-					zoom: 11
-				});
-  
-				var marker = new google.maps.Marker({
-					map: map,
-					position: {lat: 34.052224, lng: -118.243388},
-					animation: google.maps.Animation.DROP,
-				});
-  
-				var infowindow = new google.maps.InfoWindow();
-  
-			}
-		</script>
+		<script></script>
 		<!--<script src="script.js"></script>-->
 	</head>
 	
@@ -61,9 +21,7 @@
 		<div class="nav-div">
 			<nav class="navigate">
 			
-				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
-				
-				<br>
+				<h3 class="text-center home-text"><a href="ne-home.html">Home</a></h3>
 				
 				<ul class="links-list">
 					<li><h4>Top</h4>
@@ -91,9 +49,8 @@
 					<li><h4>Footwear</h4>
 						<ul id="shoes-list" class="">
 							<li><a href="footwear-sneakers.html">Sneakers</a></li>
-							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-scandals.html">Sandals</a></li>
 							<li><a href="footwear-slippers.html">Slippers</a></li>
-							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
 							<li><a href="footwear-boots.html">Boots</a></li>
 						</ul>
 					</li>
@@ -102,7 +59,7 @@
 							<li><a href="asc-hats.html">Hats</a></li>
 							<li><a href="asc-bracelets.html">Bracelets</a></li>
 							<li><a href="asc-necklaces.html">Necklaces</a></li>
-							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-earrings.html">Earrings</a></li>
 							<li><a href="asc-backpacks.html">Back Pack</a></li>
 							<li><a href="asc-glasses.html">Glasses</a></li>
 							<li><a href="asc-scarfs.html">Scarfs</a></li>
@@ -160,42 +117,170 @@
 				<div class="ne-row row">
 					<div class="col-md-12">
 						<h1 class="text-center title-text font-one">New Expressions</h1>
-						<!--<h3 class="text-center">with Great Impressions</h3>-->
+						<h3 class="text-center">Back Packs</h3>
 					</div>
 				</div>
-				
-				
 			
 				<div class="row">
 				
-					<div class="col-md-12">
+					<h2 class="text-center" >Men</h2>
 					
-						<h2 class="text-center font-one">Location</h2>
-						
-						<br>
+					<br><br><br>
 					
-						<div id="map-div">
-						
-						</div>
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Grey w/ White Dots Back Pack</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/d1ae09e60d92382715ff95c5ad25d684/tumblr_o0g1ncTiYz1qi73s5o1_500.jpg"/>
+						<p class="text-center">$27.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Leather Back Pack</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/58a54e12e329f77ccc6229fb7221cc4b/tumblr_ng661kxn051rnizbzo1_500.jpg"/>
+						<p class="text-center">$26.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Beige Canvas Back Pack</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/19b23565df79976643b8076dde7d4b71/tumblr_nlrhkfn1qS1u7wnoko1_500.jpg"/>
+						<p class="text-center">$29.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Ampersand Back Pack</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/1ef79b232ecab0fb0f3280eaa4285530/tumblr_niijzyqyYD1u7wnoko1_500.jpg"/>
+						<p class="text-center">$25.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Camo Gorilla back Pack</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/9cc5cb15c742421138fa6ac8911bf94e/tumblr_o0lqeloDlq1u989luo1_500.jpg"/>
+						<p class="text-center">$27.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Paisley Back Pack</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/530ab56726a4166695872a300a0fc6a9/tumblr_o1hf8aofzh1v1lpq3o1_500.jpg"/>
+						<p class="text-center">$28.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Plain Grey Back Pack</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/cee57229fd61f40b7a6533a790edc444/tumblr_o132hlqWzq1si050to1_500.jpg"/>
+						<p class="text-center">$26.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Dark Fashion Back Pack</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/a35bd2de4af1846a0bcee51839417750/tumblr_o12elwbrR01sbw8kto1_500.jpg"/>
+						<p class="text-center">$28.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Camo w/Spikes Back Pack</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/85dbd81c8b0157de2e136c847aad7548/tumblr_o0odyzuuKp1rfv80wo1_500.jpg"/>
+						<p class="text-center">$25.00</p>
 					
 					</div>
 				
 				</div>
 				
-				<br>
 				<hr>
 				
 				<div class="row">
 				
-					<div class="col-md-12">
-						<center>
-							<p style="padding: 10px;">We are located in none other than, Los Angeles California!</p>
-							<p style="padding: 10px;">We normally only ship domestic. If you order from another country, special conditions will apply.</p>
-							<p style="padding: 10px;">We have various items that are custom and hand-made. So anything you see with a star next to it,
-							is unique. Buy it and you will be the only one with that product!</p>
-						</center>
+					<h2 class="text-center" style="padding-left: 20px">Women</h2>
+					
+					<br><br><br>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Suede w/ Brown Straps Back Pack</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/1cdeba37a66f1560c4d5d54a582b8203/tumblr_nqledlRmXF1u7wnoko1_500.jpg"/>
+						<p class="text-center">$22.00</p>
+					
 					</div>
-
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black & Baby Print Back Pack</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/7872bc894965e431ec4db5424cad2bde/tumblr_o173r0nhxT1rfv80wo1_500.jpg"/>
+						<p class="text-center">$23.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Light Teal Back Pack</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/839e610c57fa8271546e7e95266001e2/tumblr_mh9p5dIBwa1raeaago1_500.jpg"/>
+						<p class="text-center">$24.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Lady Pattern Back Pack</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/tumblr_mawdk2g7O11rxwvnbo1_500.jpg"/>
+						<p class="text-center">$26.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Polka Dot Back Pack</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/88ffe1a0c8a707e8cb04831588c7a943/tumblr_o0nzy6rzDM1v3rzbjo1_500.jpg"/>
+						<p class="text-center">$21.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Panda Back Pack</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/fb8508d0f839361833c83b0e4ed5d3e9/tumblr_nybi4zE6vj1tg2wngo1_500.jpg"/>
+						<p class="text-center">$24.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Sailor Back Pack</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/d2c44c7b83707404aad12e733fd995c9/tumblr_o0mau3gqts1s31er9o2_1280.jpg"/>
+						<p class="text-center">$22.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Pink Nebula Back Pack</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/7aabbd057b3f659c5214195410ad5a42/tumblr_nyo6wcvFEF1tg2wngo1_500.jpg"/>
+						<p class="text-center">$25.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Leather Back Pack</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/a1be30d8afdbfddf33bee9d3b4acb1f3/tumblr_nf01eebdn31rp1xozo1_500.jpg"/>
+						<p class="text-center">$24.00</p>
+					
+					</div>
+				
 				</div>
 				
 			</div>
