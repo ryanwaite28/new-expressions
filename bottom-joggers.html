@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		<title>NE - Location</title>
+		<title>NE Joggers</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/jpg" href="l1.jpg">
@@ -12,47 +12,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
 		<script src="jquery.slides.min.js"></script>
-		<script>
-			$(function(){
-				$("#slides").slidesjs({
-					width: 1200,
-					height: 650,
-					start: 1,
-					navigation: {
-						active: true,
-						effect: "slide"
-					},
-					play: {
-						active: true,
-						effect: "slide",
-						interval: 3000,
-						auto: true,
-						swap: true,
-						pauseOnHover: false,
-						restartDelay: 2500
-					}
-				});
-			});
-			var map;
-
-			function initMap() {
-				// Create a map object and specify the DOM element for display.
-				map = new google.maps.Map(document.getElementById('map-div'), {
-					center: {lat: 34.052224, lng: -118.243388},
-					scrollwheel: true,
-					zoom: 11
-				});
-  
-				var marker = new google.maps.Marker({
-					map: map,
-					position: {lat: 34.052224, lng: -118.243388},
-					animation: google.maps.Animation.DROP,
-				});
-  
-				var infowindow = new google.maps.InfoWindow();
-  
-			}
-		</script>
+		<script></script>
 		<!--<script src="script.js"></script>-->
 	</head>
 	
@@ -61,9 +21,7 @@
 		<div class="nav-div">
 			<nav class="navigate">
 			
-				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
-				
-				<br>
+				<h3 class="text-center home-text"><a href="ne-home.html">Home</a></h3>
 				
 				<ul class="links-list">
 					<li><h4>Top</h4>
@@ -91,9 +49,8 @@
 					<li><h4>Footwear</h4>
 						<ul id="shoes-list" class="">
 							<li><a href="footwear-sneakers.html">Sneakers</a></li>
-							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-scandals.html">Sandals</a></li>
 							<li><a href="footwear-slippers.html">Slippers</a></li>
-							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
 							<li><a href="footwear-boots.html">Boots</a></li>
 						</ul>
 					</li>
@@ -102,7 +59,7 @@
 							<li><a href="asc-hats.html">Hats</a></li>
 							<li><a href="asc-bracelets.html">Bracelets</a></li>
 							<li><a href="asc-necklaces.html">Necklaces</a></li>
-							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-earrings.html">Earrings</a></li>
 							<li><a href="asc-backpacks.html">Back Pack</a></li>
 							<li><a href="asc-glasses.html">Glasses</a></li>
 							<li><a href="asc-scarfs.html">Scarfs</a></li>
@@ -160,42 +117,122 @@
 				<div class="ne-row row">
 					<div class="col-md-12">
 						<h1 class="text-center title-text font-one">New Expressions</h1>
-						<!--<h3 class="text-center">with Great Impressions</h3>-->
+						<h3 class="text-center">Joggers</h3>
 					</div>
 				</div>
-				
-				
 			
 				<div class="row">
 				
-					<div class="col-md-12">
+					<h2 class="text-center" style="padding-left: 20px">Men</h2>
 					
-						<h2 class="text-center font-one">Location</h2>
-						
-						<br>
+					<br><br><br>
 					
-						<div id="map-div">
-						
-						</div>
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>USA Joggers</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/ba394b2a3f422ee5bb49a07d711ca4ac/tumblr_o0p1jmC5Sv1s968deo1_500.jpg"/>
+						<p class="text-center">$36.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Grey Joggers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/dd101ffc88042adc12e197016e8bc60e/tumblr_o0l816yzuH1r9640po1_400.jpg"/>
+						<p class="text-center">$35.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black & White New York Joggers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/56724210e3e6245aec896b6da623eecf/tumblr_o0x25g0GvK1ud0cwoo1_500.jpg"/>
+						<p class="text-center">$39.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Mamba Joggers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/8bb343aab21678205c32136d6eb80a73/tumblr_o0m9eiVY0Q1uuwxqbo1_500.jpg"/>
+						<p class="text-center">$34.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Redskins Joggers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/865e1173415c4a56060316222d1706be/tumblr_o14c09oTSK1u9fil9o1_500.jpg"/>
+						<p class="text-center">$40.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Joggers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/3d365445a923322c5e337e570fe12f2c/tumblr_o1budaiPD21uk6t9zo1_500.jpg"/>
+						<p class="text-center">$37.00</p>
 					
 					</div>
 				
 				</div>
 				
-				<br>
 				<hr>
 				
 				<div class="row">
 				
-					<div class="col-md-12">
-						<center>
-							<p style="padding: 10px;">We are located in none other than, Los Angeles California!</p>
-							<p style="padding: 10px;">We normally only ship domestic. If you order from another country, special conditions will apply.</p>
-							<p style="padding: 10px;">We have various items that are custom and hand-made. So anything you see with a star next to it,
-							is unique. Buy it and you will be the only one with that product!</p>
-						</center>
+					<h2 class="text-center" style="padding-left: 20px">Women</h2>
+					
+					<br><br><br>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Dark Grey Joggers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/540c8132d662701940807998b35b8810/tumblr_o17dtqt6Mn1v1kn5ko1_500.jpg"/>
+						<p class="text-center">%34.00</p>
+					
 					</div>
-
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Adidas Joggers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/7c163d5c6c0b70153ecc7f042433112b/tumblr_o164exbPeR1s2v7fxo1_500.jpg"/>
+						<p class="text-center">$33.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Slim Fit Joggers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/56132e75d3664f74d86baed1ef22940f/tumblr_o139kzpprU1v1lpq3o1_500.jpg"/>
+						<p class="text-center">$30.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Light Striped Joggers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/4e78ad24f31626967f5ff26f68b282f3/tumblr_o13sbztsTu1v1lpq3o1_500.jpg"/>
+						<p class="text-center">$32.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>White Slim Joggers</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/5a2faac7f2d5b772c9112ba73afed425/tumblr_o0qn7lTlI21uh8g69o1_500.jpg"/>
+						<p class="text-center">$35.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>All Over Print Joggers</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/4958c5a2632747c37c6394436e554c86/tumblr_o11q7m5vcv1v1lpq3o1_500.jpg"/>
+						<p class="text-center">$37.00</p>
+					
+					</div>
+				
 				</div>
 				
 			</div>

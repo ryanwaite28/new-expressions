@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		<title>NE - Location</title>
+		<title>NE Hats</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/jpg" href="l1.jpg">
@@ -12,47 +12,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
 		<script src="jquery.slides.min.js"></script>
-		<script>
-			$(function(){
-				$("#slides").slidesjs({
-					width: 1200,
-					height: 650,
-					start: 1,
-					navigation: {
-						active: true,
-						effect: "slide"
-					},
-					play: {
-						active: true,
-						effect: "slide",
-						interval: 3000,
-						auto: true,
-						swap: true,
-						pauseOnHover: false,
-						restartDelay: 2500
-					}
-				});
-			});
-			var map;
-
-			function initMap() {
-				// Create a map object and specify the DOM element for display.
-				map = new google.maps.Map(document.getElementById('map-div'), {
-					center: {lat: 34.052224, lng: -118.243388},
-					scrollwheel: true,
-					zoom: 11
-				});
-  
-				var marker = new google.maps.Marker({
-					map: map,
-					position: {lat: 34.052224, lng: -118.243388},
-					animation: google.maps.Animation.DROP,
-				});
-  
-				var infowindow = new google.maps.InfoWindow();
-  
-			}
-		</script>
+		<script></script>
 		<!--<script src="script.js"></script>-->
 	</head>
 	
@@ -61,9 +21,7 @@
 		<div class="nav-div">
 			<nav class="navigate">
 			
-				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
-				
-				<br>
+				<h3 class="text-center home-text"><a href="ne-home.html">Home</a></h3>
 				
 				<ul class="links-list">
 					<li><h4>Top</h4>
@@ -91,9 +49,8 @@
 					<li><h4>Footwear</h4>
 						<ul id="shoes-list" class="">
 							<li><a href="footwear-sneakers.html">Sneakers</a></li>
-							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-scandals.html">Sandals</a></li>
 							<li><a href="footwear-slippers.html">Slippers</a></li>
-							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
 							<li><a href="footwear-boots.html">Boots</a></li>
 						</ul>
 					</li>
@@ -102,7 +59,7 @@
 							<li><a href="asc-hats.html">Hats</a></li>
 							<li><a href="asc-bracelets.html">Bracelets</a></li>
 							<li><a href="asc-necklaces.html">Necklaces</a></li>
-							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-earrings.html">Earrings</a></li>
 							<li><a href="asc-backpacks.html">Back Pack</a></li>
 							<li><a href="asc-glasses.html">Glasses</a></li>
 							<li><a href="asc-scarfs.html">Scarfs</a></li>
@@ -133,7 +90,6 @@
 						</ul>
 					</li>
 				</ul>
-				</ul>
 				
 				<br>
 				
@@ -161,42 +117,122 @@
 				<div class="ne-row row">
 					<div class="col-md-12">
 						<h1 class="text-center title-text font-one">New Expressions</h1>
-						<!--<h3 class="text-center">with Great Impressions</h3>-->
+						<h3 class="text-center">Hats</h3>
 					</div>
 				</div>
-				
-				
 			
 				<div class="row">
 				
-					<div class="col-md-12">
+					<h2 class="text-center" style="padding-left: 20px">Men</h2>
 					
-						<h2 class="text-center font-one">Location</h2>
-						
-						<br>
+					<br><br><br>
 					
-						<div id="map-div">
-						
-						</div>
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>NY Beanie Hat</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/2b5b0d52c4511c48b96dee8615602b96/tumblr_o0swk4GrQK1td9ug1o1_500.jpg"/>
+						<p class="text-center">$27.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Ag Floral Snapback Hat</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/63aca265ac122a3803e7043af4452d9b/tumblr_nrfleb7dcP1qkfmpqo1_500.jpg"/>
+						<p class="text-center">$22.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Fedora Hat</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/9c2ce5780705339a41bc52f7bfe16b91/tumblr_ny69gjLxUZ1tceo0mo1_500.jpg"/>
+						<p class="text-center">$25.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Weirdo Beanie Hat</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/f16230053cd4a2edf0172a620ca23b4d/tumblr_o1h12fAEME1sqgd1co1_500.jpg"/>
+						<p class="text-center">$26.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Bulls Snapback Hat</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/dfe19afbb013d5f3a5d82d77c2853d1a/tumblr_nsjp56l5sE1u82auco1_500.jpg"/>
+						<p class="text-center">$24.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Light Beige Fedora Hat</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/bce93264dcb86d02320aa58c76f3ebcf/tumblr_mpqjq3OG5k1s706l7o1_500.jpg"/>
+						<p class="text-center">$23.00</p>
 					
 					</div>
 				
 				</div>
 				
-				<br>
 				<hr>
 				
 				<div class="row">
 				
-					<div class="col-md-12">
-						<center>
-							<p style="padding: 10px;">We are located in none other than, Los Angeles California!</p>
-							<p style="padding: 10px;">We normally only ship domestic. If you order from another country, special conditions will apply.</p>
-							<p style="padding: 10px;">We have various items that are custom and hand-made. So anything you see with a star next to it,
-							is unique. Buy it and you will be the only one with that product!</p>
-						</center>
+					<h2 class="text-center" style="padding-left: 20px">Women</h2>
+					
+					<br><br><br>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Cream Color Beanie Hat</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/920bf91a77f6da2f139cc9f07f867137/tumblr_o1h36heoWW1tqu8i3o1_500.jpg"/>
+						<p class="text-center">$.21.00</p>
+					
 					</div>
-
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>HIME Snapback Hat</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/0c9a726cab7ce6c87f8f08fc56e43f7b/tumblr_nxq0h7Mlvw1szydvjo1_500.jpg"/>
+						<p class="text-center">$20.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Light Blue Fedora Hat</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/b3697947e22fd0cce2955aa1c4df3854/tumblr_nedjqikhqJ1r3hbd2o1_500.jpg"/>
+						<p class="text-center">$23.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Fun Stuff Beanie Hat</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/792b94917364fdccbdb9ce3c51e8a1c2/tumblr_nhps4tv4Zg1qdx29ao1_1280.jpg"/>
+						<p class="text-center">$25.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Brooklyn Snapback Hat</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/9109ee23ca7fd84946beecae87f8aa13/tumblr_nu8l7vPmuD1ufb5lvo1_500.jpg"/>
+						<p class="text-center">$24.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Cool Band Fedora Hat</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/a45be4a1f30e92e44f5aa3b1eab7406e/tumblr_n9na7kDTGw1rsto25o1_500.jpg"/>
+						<p class="text-center">$27.00</p>
+					
+					</div>
+				
 				</div>
 				
 			</div>

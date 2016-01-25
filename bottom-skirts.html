@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		<title>NE - Location</title>
+		<title>NE Skirts</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="icon" type="image/jpg" href="l1.jpg">
@@ -12,47 +12,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSHPWjouiZzdAI_EhWkuuLsFMEGTgyYWE&callback=initMap"async defer></script>
 		<script src="jquery.slides.min.js"></script>
-		<script>
-			$(function(){
-				$("#slides").slidesjs({
-					width: 1200,
-					height: 650,
-					start: 1,
-					navigation: {
-						active: true,
-						effect: "slide"
-					},
-					play: {
-						active: true,
-						effect: "slide",
-						interval: 3000,
-						auto: true,
-						swap: true,
-						pauseOnHover: false,
-						restartDelay: 2500
-					}
-				});
-			});
-			var map;
-
-			function initMap() {
-				// Create a map object and specify the DOM element for display.
-				map = new google.maps.Map(document.getElementById('map-div'), {
-					center: {lat: 34.052224, lng: -118.243388},
-					scrollwheel: true,
-					zoom: 11
-				});
-  
-				var marker = new google.maps.Marker({
-					map: map,
-					position: {lat: 34.052224, lng: -118.243388},
-					animation: google.maps.Animation.DROP,
-				});
-  
-				var infowindow = new google.maps.InfoWindow();
-  
-			}
-		</script>
+		<script></script>
 		<!--<script src="script.js"></script>-->
 	</head>
 	
@@ -61,9 +21,7 @@
 		<div class="nav-div">
 			<nav class="navigate">
 			
-				<h3 class="text-center"><a style="color: black;" href="ne-home.html">Home</a></h3>
-				
-				<br>
+				<h3 class="text-center home-text"><a href="ne-home.html">Home</a></h3>
 				
 				<ul class="links-list">
 					<li><h4>Top</h4>
@@ -91,9 +49,8 @@
 					<li><h4>Footwear</h4>
 						<ul id="shoes-list" class="">
 							<li><a href="footwear-sneakers.html">Sneakers</a></li>
-							<li><a href="footwear-scandals.html">Scandals</a></li>
+							<li><a href="footwear-scandals.html">Sandals</a></li>
 							<li><a href="footwear-slippers.html">Slippers</a></li>
-							<li><a href="footwear-flipflops.html">Flip Flops</a></li>
 							<li><a href="footwear-boots.html">Boots</a></li>
 						</ul>
 					</li>
@@ -102,7 +59,7 @@
 							<li><a href="asc-hats.html">Hats</a></li>
 							<li><a href="asc-bracelets.html">Bracelets</a></li>
 							<li><a href="asc-necklaces.html">Necklaces</a></li>
-							<li><a href="asc-earings.html">Earings</a></li>
+							<li><a href="asc-earrings.html">Earrings</a></li>
 							<li><a href="asc-backpacks.html">Back Pack</a></li>
 							<li><a href="asc-glasses.html">Glasses</a></li>
 							<li><a href="asc-scarfs.html">Scarfs</a></li>
@@ -160,42 +117,98 @@
 				<div class="ne-row row">
 					<div class="col-md-12">
 						<h1 class="text-center title-text font-one">New Expressions</h1>
-						<!--<h3 class="text-center">with Great Impressions</h3>-->
+						<h3 class="text-center">Skirts</h3>
 					</div>
 				</div>
-				
-				
 			
 				<div class="row">
 				
-					<div class="col-md-12">
+					<h2 class="text-center" style="padding-left: 20px">Men</h2>
 					
-						<h2 class="text-center font-one">Location</h2>
-						
-						<br>
+					<br><br><br>
 					
-						<div id="map-div">
-						
-						</div>
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Dark Evil Skirt</b></p>
+						<img class="present-img" src="https://36.media.tumblr.com/6a2e163ca0ac47066850239866732cd2/tumblr_o0ndqdVXb11scuftno1_500.jpg"/>
+						<p class="text-center">$22.00</p>
 					
 					</div>
-				
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Denim Skirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/d8c9ad358166593101b2cee07051262b/tumblr_o19hqqEPrV1uscofmo1_500.jpg"/>
+						<p class="text-center">$21.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Skirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/3f6d508f39fe3e80b5c58f2c30a5eb9b/tumblr_n5xrulaS9K1twtxmyo2_400.jpg"/>
+						<p class="text-center">$25.00</p>
+					
+					</div>
+					
 				</div>
 				
-				<br>
 				<hr>
 				
 				<div class="row">
 				
-					<div class="col-md-12">
-						<center>
-							<p style="padding: 10px;">We are located in none other than, Los Angeles California!</p>
-							<p style="padding: 10px;">We normally only ship domestic. If you order from another country, special conditions will apply.</p>
-							<p style="padding: 10px;">We have various items that are custom and hand-made. So anything you see with a star next to it,
-							is unique. Buy it and you will be the only one with that product!</p>
-						</center>
+					<h2 class="text-center" style="padding-left: 20px">Women</h2>
+					
+					<br><br><br>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Long Black Skirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/23f5155534c445a2fabf802237a7381b/tumblr_o1fxbbeJaC1v2dfevo1_500.jpg"/>
+						<p class="text-center">$23.00</p>
+					
 					</div>
-
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>White Elegent Skirt</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/7dbb0400d90ac7f998c1837b9f9083c5/tumblr_o0jvnsB6jr1qiujq2o1_500.jpg"/>
+						<p class="text-center">$28.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Ling Rich Skirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/75e100f22a7180a7034b55f49e79732b/tumblr_nmsrwtI7ql1tsw6nho4_500.jpg"/>
+						<p class="text-center">$30.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Black Leather Skirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/a664599ecc47bba7e740c8161dc97f65/tumblr_o0x3pqwIVU1sv5umto1_500.jpg"/>
+						<p class="text-center">$33.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>All Over Print Skirt</b></p>
+						<img class="present-img" src="https://40.media.tumblr.com/438d54bd1c92268cf7aa08defa555158/tumblr_n3ue20uiNw1ss0knjo1_500.jpg"/>
+						<p class="text-center">$29.00</p>
+					
+					</div>
+					
+					<div class="col-md-4">
+					
+						<p class="text-center"><b>Short Wavy Skirt</b></p>
+						<img class="present-img" src="https://41.media.tumblr.com/a72572dc8e34d05a1d758826384c1020/tumblr_ngbfp6IVfZ1s6fq61o1_400.jpg"/>
+						<p class="text-center">$30.00</p>
+					
+					</div>
+				
 				</div>
 				
 			</div>
