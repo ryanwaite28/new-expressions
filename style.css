@@ -238,6 +238,11 @@ hr {
 	height: 50vh;
 }
 
+.v-frame {
+	width: 50%; 
+	height: 85vh;
+}
+
 .p-img {
 	width: 95%;
 	display: block;

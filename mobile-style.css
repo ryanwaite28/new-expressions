@@ -29,6 +29,11 @@
 		font-size: 3em;
 	}
 	
+	.v-frame {
+		width: 90%; 
+		height: 85vh;
+	}
+	
 	.links-list, .social-list {
 		display: none;
 	}
