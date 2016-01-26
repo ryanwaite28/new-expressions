@@ -18,14 +18,14 @@ $(document).ready(function(){
 	
 	menuIcon.click(function () {
 
-		if(navBar.css("height") != "500px") {
-			navBar.css("height", "500px");
-			mainContain.css("height", "calc(100vh - 500px)");
+		if(navBar.css("height") != "400px") {
+			navBar.css("height", "400px");
+			mainContain.css("height", "calc(100vh - 400px)");
 			linksList.css({
 				'display': 'block',
 				'overflow-y': 'scroll',
 				'width': '100%',
-				'height': '345px',
+				'height': '215px',
 				'border-bottom': '1px solid black',
 			});
 			subList.css("display", "block");

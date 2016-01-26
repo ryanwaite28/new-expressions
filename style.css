@@ -250,6 +250,13 @@ hr {
 	display: none;
 }
 
+.logo {
+	height: 55px;
+	width: 65px;
+	display: block;
+	margin: auto;
+}
+
 /*   Media Queries   */
 
 @media (max-width: 675px) {
@@ -282,7 +289,7 @@ hr {
 	
 }
 
-@media (max-width: 785px) {
+/*@media (max-width: 785px) {
 	
 	.nav-div {
 		width: 100%;
@@ -308,6 +315,10 @@ hr {
 		transition: 0.3s;
 	}
 	
+	.title-text {
+		
+	}
+	
 	.links-list, .social-list {
 		display: none;
 	}
@@ -330,7 +341,7 @@ hr {
 		transition: 0.3s;
 	}
 	
-	/*  */
+
 	
 	.main-contain {
 		height: calc(100vh - 55px);
@@ -338,7 +349,7 @@ hr {
 		width: 100%;
 	}
 	
-}
+} */
 
 @media (max-width: 505px) {
 	
