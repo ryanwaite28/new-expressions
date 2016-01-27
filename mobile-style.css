@@ -49,11 +49,11 @@
 		-webkit-transition: transition 0.3s;
 		transition: 0.3s;
 	}
+	
 	#menu-icon:hover {
-		opacity: 1.0;
+		/*opacity: 1.0;
 		background-color: #a6a6a6;
-		text-decoration: none;
-		transition: 0.3s;
+		transition: 0.3s;*/
 	}
 	
 	.music-frame {
