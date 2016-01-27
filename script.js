@@ -14,18 +14,18 @@ $(document).ready(function(){
 	
 	var mainContain = $('.main-contain')
 	
-	$('.present-img').append('<button type="button">Add To Cart</button>');
+	$('.col-md-4').append('<center><input class="add-btn" style="margin: 0" type="button" value="Add To Cart"/></center>');
 	
 	menuIcon.click(function () {
 
-		if(navBar.css("height") != "500px") {
-			navBar.css("height", "500px");
-			mainContain.css("height", "calc(100vh - 500px)");
+		if(navBar.css("height") != "400px") {
+			navBar.css("height", "400px");
+			mainContain.css("height", "calc(100vh - 405px)");
 			linksList.css({
 				'display': 'block',
 				'overflow-y': 'scroll',
 				'width': '100%',
-				'height': '345px',
+				'height': '215px',
 				'border-bottom': '1px solid black',
 			});
 			subList.css("display", "block");
@@ -43,12 +43,6 @@ $(document).ready(function(){
 	
 });
 
-function addBtn() {
-	console.log('Added Button');
-	
-	var btn = document.createElement('button');
-	
-	$('.present-img').append('The');
-}
+function addItem() {
 
-addBtn();
+}
