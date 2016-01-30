@@ -16,7 +16,7 @@ $(document).ready(function(){
 	
 	$('.col-md-4').append('<center><input class="add-btn" style="margin: 0" type="button" value="Add To Cart"/></center>');
 	
-	$('.title-text').prepend('<a id="s-cart" href="#"><img id="shopping-cart" src="http://i.imgur.com/9G3y95S.png"/></a>');
+	//$('.title-text').prepend('<a id="s-cart" href="#"><img id="shopping-cart" src="http://i.imgur.com/9G3y95S.png"/></a>');
 	
 	menuIcon.click(function () {
 
