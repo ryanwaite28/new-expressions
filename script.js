@@ -2,6 +2,8 @@
 
 $(document).ready(function(){
 	
+	$('head').append('<link rel="icon" type="image/jpg" href="http://i.imgur.com/pEQbIa7.jpg" size="20x20">');
+	
 	var menuIcon = $('#menu-icon');
 	
 	var linksList = $('.links-list');
